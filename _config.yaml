@@ -1,13 +1,5 @@
 # Site settings
 title: Daniel's Personal Website
-# description: Daniel's Personal Website
-# baseurl: ""
-# url: "https://danieljameskay.github.io"
-# Build settings
-# markdown: kramdown
-# theme: minima
-# plugins:
-#   - jekyll-feed
-#   - jekyll-seo-tag
-#   - jekyll-sitemap
-# ```
+remote_theme: pages-themes/tactile@v0.2.0
+plugins:
+- jekyll-remote-theme
