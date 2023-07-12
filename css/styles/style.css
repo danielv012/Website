@@ -30,7 +30,10 @@ body{
     background-size: cover;
     background-position: center;
 
-    padding: 2%;
+    margin-top: 2%;
+    margin-left: 3%;
+
+    padding: 0%;
 }
 
 .container{
@@ -84,4 +87,21 @@ nav ul li a::after{
 
 nav ul li a:hover::after{
     width: 100%;
+}
+
+.introduction{
+    font-size: 30px;
+    margin-left: 5%;
+    align-items: center;
+}
+
+.introduction h2{
+    font-size: 60px;
+    align-items: center;
+    text-shadow: #000000;
+    text-shadow: 3px 3px 15px #0000009d;
+}
+
+.introduction p{
+    font-weight: 350;
 }
