@@ -96,17 +96,27 @@ nav ul li a:hover::after{
     font-size: 35px;
     margin-left: 8%;
     margin-top: 3%;
+    text-align: left;
+}
+
+.introduction-text{
+    margin-left: -2%;
 }
 
 .introduction h2{
     text-shadow: #000000 2px 2px 5px;
 }
 
+.introduction p{
+    text-shadow: #000000 0px 0px 10px;
+    font-weight: 300;
+    margin-left: .1%;
+}
 
 #preface {
     margin-top: -5%;
-    margin-left: -2%;
     font-size: 60px;
+    font-weight: 400;
 }
 
 #name {
