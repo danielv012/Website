@@ -24,14 +24,17 @@ body{
 }
 
 .headshot{
-    width: 400px;
+    width: 450px;
     border-radius: 50%;
-    background-image: url(../../assets/img/headshot.jpg);
+    background-image: url(../../assets/img/headshot.png);
     background-size: cover;
     background-position: center;
+    /* create a drop shadow */
+    box-shadow: -5px -5px 0px rgb(0, 0, 0);
+    
 
-    margin-top: 2%;
-    margin-left: 3%;
+    /* margin-top: 5%; */
+    /* margin-left: 9%; */
 
     padding: 0%;
 }
@@ -90,18 +93,24 @@ nav ul li a:hover::after{
 }
 
 .introduction{
-    font-size: 30px;
-    margin-left: 5%;
-    align-items: center;
+    font-size: 35px;
+    margin-left: 8%;
+    margin-top: 3%;
 }
 
 .introduction h2{
-    font-size: 60px;
-    align-items: center;
-    text-shadow: #000000;
-    text-shadow: 3px 3px 15px #0000009d;
+    text-shadow: #000000 2px 2px 5px;
 }
 
-.introduction p{
-    font-weight: 350;
+
+#preface {
+    margin-top: -5%;
+    margin-left: -2%;
+    font-size: 60px;
+}
+
+#name {
+    font-size: 85px;
+    font-weight: 800;
+    margin-top: -1%;
 }
