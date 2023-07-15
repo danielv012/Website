@@ -104,7 +104,7 @@ nav ul li a:hover::after{
 }
 
 .introduction h2{
-    text-shadow: #000000 2px 2px 5px;
+    
 }
 
 .introduction p{
@@ -116,11 +116,14 @@ nav ul li a:hover::after{
 #preface {
     margin-top: -5%;
     font-size: 60px;
-    font-weight: 400;
+    font-weight: 600;
+    text-shadow: #00000034 0px 0px 8px;
 }
 
 #name {
     font-size: 85px;
     font-weight: 800;
     margin-top: -1%;
+    margin-left: -.1%;
+    text-shadow: #000000 4px 5px 0px;
 }
