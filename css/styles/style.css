@@ -7,9 +7,9 @@
 
 body{
     color: #ffffff;
-    background-image: url(../../assets/img/background.jpg);
+    background-image: url(../../assets/Background.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-color: #000000;
 }
 
@@ -137,9 +137,94 @@ nav ul li a:hover::after{
 
 #about{
     padding-top: 250px;
+    padding-left: 80px;
+    padding-right: 80px;
+    color: #b0b0b0;
+}
+
+.row{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.about-col-1{
+    flex-basis: 60%;
+    text-align: left;
+    padding-right: 40px;
+    font-size: 20px;
+}
+
+.sub-title{
+    text-align: center;
+    color: #fff;
+}
+
+.about-col-2{
+    flex-basis: 30%;
+}
+
+.about-col-2 img{
+    width: 100%;
+    border-radius: 50px
+}
+
+.sub-title{
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+    align-items: center;
+}
+
+.tab-titles p{
+    font-size: 30px;
+}
+
+.tab-titles p:hover{
     color: #ffffff;
 }
 
-row{
-    
+.tab-links{
+    margin-right: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #6a00ff;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span{
+    color: #bf86ff;
+    font-size: 25px;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
 }
