@@ -75,9 +75,10 @@ nav ul li a
 {
     color: white;
     text-decoration: none;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 400;
     position: relative;
+    transition: .25s;
 }
 
 nav ul li a::after{
@@ -89,6 +90,11 @@ nav ul li a::after{
     left: 0;
     bottom: -6px;
     transition: 0.3s;
+}
+
+nav ul li a:hover{
+    text-shadow: 0 0 20px #ffffff;
+    transition: .25s;
 }
 
 nav ul li a:hover::after{
@@ -128,7 +134,7 @@ nav ul li a:hover::after{
 #name {
     font-size: 85px;
     font-weight: 800;
-    margin-top: -1%;
+    margin-top: -.5%;
     margin-left: -.1%;
     text-shadow: #000000 4px 5px 0px;
 }
@@ -136,10 +142,10 @@ nav ul li a:hover::after{
 /* ------------- ABOUT --------------- */
 
 #about{
-    padding-top: 250px;
+    padding-top: 480px;
     padding-left: 80px;
     padding-right: 80px;
-    color: #b0b0b0;
+    color: #ffffff;
 }
 
 .row{
@@ -149,7 +155,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-1{
-    flex-basis: 60%;
+    flex-basis: 45%;
     text-align: left;
     padding-right: 40px;
     font-size: 20px;
@@ -161,7 +167,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-2{
-    flex-basis: 30%;
+    flex-basis: 25%;
 }
 
 .about-col-2 img{
@@ -176,16 +182,22 @@ nav ul li a:hover::after{
 
 .tab-titles{
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     margin: 20px 0 40px;
-    align-items: center;
+    align-items: flex-start
 }
 
 .tab-titles p{
     font-size: 30px;
+    margin-bottom: 10px;
+    transition: .25s;
+    
 }
 
 .tab-titles p:hover{
-    color: #ffffff;
+    text-shadow: 0 0 20px #ffffff;
+    transition: .25s;
 }
 
 .tab-links{
@@ -203,7 +215,7 @@ nav ul li a:hover::after{
     background: #6a00ff;
     position: absolute;
     left: 0;
-    bottom: -8px;
+    bottom: -4px;
     transition: 0.5s;
 }
 
