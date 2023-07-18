@@ -192,15 +192,13 @@ nav ul li a:hover::after{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 1.25rem 0 2.5rem;
+    margin: 1.25rem 0 1.5rem;
     align-items: flex-start
 }
 
 .tab-titles p{
     font-size: 1.875rem;
-    margin-bottom: .625rem;
     transition: .25s;
-    
 }
 
 .tab-titles p:hover{
