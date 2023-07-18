@@ -22,22 +22,21 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding: 0 50px; */
 }
 
 .headshot{
-    width: 450px;
+    width: 28.125rem;
     border-radius: 50%;
     background-image: url(../../assets/img/headshot.png);
     background-size: cover;
     background-position: center;
     /* create a drop shadow */
-    box-shadow: -5px -5px 0px rgb(0, 0, 0);
+    box-shadow: -.3125rem -.3125rem 0rem rgb(0, 0, 0);
     
     
-    border: 5px solid #000000;
-    outline: 5px solid #ffffff;
-    outline-offset: 3px;
+    border: .3125rem solid #000000;
+    outline: .3125rem solid #ffffff;
+    outline-offset: .1875rem;
     /* margin-top: 5%; */
     /* margin-left: 9%; */
 
@@ -45,11 +44,11 @@ body{
 }
 
 .container{
-    padding: 5px;
+    padding: .3125rem;
 }
 
 .title{
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 700;
 }
 
@@ -68,17 +67,17 @@ nav ul{
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 .625rem;
     align-items: right;
     color: white;
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 nav ul li a
 {
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 400;
     position: relative;
     transition: .25s;
@@ -87,16 +86,16 @@ nav ul li a
 nav ul li a::after{
     content: '';
     width: 0;
-    height: 3px;
+    height: .1875rem;
     background: #6a00ff;
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: -.375rem;
     transition: 0.3s;
 }
 
 nav ul li a:hover{
-    text-shadow: 0 0 20px #ffffff;
+    text-shadow: 0 0 1.25rem #ffffff;
     transition: .25s;
 }
 
@@ -107,7 +106,7 @@ nav ul li a:hover::after{
 /* ---------- INTRODUCTION ---------- */
 
 .introduction{
-    font-size: 35px;
+    font-size: 2.1875rem;
     margin-left: 8%;
     margin-top: 3%;
     text-align: left;
@@ -122,32 +121,32 @@ nav ul li a:hover::after{
 }
 
 .introduction p{
-    text-shadow: #000000 0px 0px 10px;
+    text-shadow: #000000 0rem 0rem .625rem;
     font-weight: 300;
     margin-left: .1%;
 }
 
 #preface {
     margin-top: -5%;
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 600;
-    text-shadow: #00000034 0px 0px 8px;
+    text-shadow: #00000034 0rem 0rem .5rem;
 }
 
 #name {
-    font-size: 85px;
+    font-size: 5.3125rem;
     font-weight: 800;
     margin-top: -.5%;
     margin-left: -.1%;
-    text-shadow: #000000 4px 5px 0px;
+    text-shadow: #000000 .25rem .3125rem 0rem;
 }
 
 /* ------------- ABOUT --------------- */
 
 #about{
-    padding-top: 400px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-top: 23.3%;
+    padding-left: 4.7%;
+    padding-right: 4.7%;
     color: #ffffff;
 }
 
@@ -160,8 +159,8 @@ nav ul li a:hover::after{
 .about-col-1{
     flex-basis: 45%;
     text-align: left;
-    padding-right: 20px;
-    font-size: 20px;
+    padding-right: 1.25rem;
+    font-size: 1.25rem;
     align-self: flex-start;
 }
 
@@ -172,20 +171,20 @@ nav ul li a:hover::after{
 
 .about-col-2{
     flex-basis: 27.5%;
-    padding-top: 100px;
+    padding-top: 6.25rem;
 }
 
  /* --------IMAGE 2 --------- */
 .about-col-2 img{
     width: 100%;
-    border-radius: 50px;
-    border: 5px solid #000000;
-    outline: 5px solid #ffffff;
-    outline-offset: 3px;
+    border-radius: 3.125rem;
+    border: .3125rem solid #000000;
+    outline: .3125rem solid #ffffff;
+    outline-offset: .1875rem;
 }
 
 .sub-title{
-    font-size: 65px;
+    font-size: 4.0625rem;
     font-weight: 700;
 }
 
@@ -193,25 +192,25 @@ nav ul li a:hover::after{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin: 20px 0 40px;
+    margin: 1.25rem 0 2.5rem;
     align-items: flex-start
 }
 
 .tab-titles p{
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 1.875rem;
+    margin-bottom: .625rem;
     transition: .25s;
     
 }
 
 .tab-titles p:hover{
-    text-shadow: 0 0 20px #ffffff;
+    text-shadow: 0 0 1.25rem #ffffff;
     transition: .25s;
 }
 
 .tab-links{
-    margin-right: 50px;
-    font-size: 20px;
+    margin-right: 3.125rem;
+    font-size: 1.25rem;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -220,11 +219,11 @@ nav ul li a:hover::after{
 .tab-links::after{
     content: '';
     width: 0;
-    height: 3px;
+    height: .1875rem;
     background: #6a00ff;
     position: absolute;
     left: 0;
-    bottom: -4px;
+    bottom: -.25rem;
     transition: 0.5s;
 }
 
@@ -234,12 +233,12 @@ nav ul li a:hover::after{
 
 .tab-contents ul li{
     list-style: none;
-    margin: 10px 0;
+    margin: .625rem 0;
 }
 
 .tab-contents ul li span{
     color: #bf86ff;
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 .tab-contents{
@@ -255,8 +254,9 @@ nav ul li a:hover::after{
 /* ------------- RESEARCH --------------- */
 
 #research{
-    padding-top: 480px;
-    padding-left: 80px;
-    padding-right: 80px;
+    /* padding-top: 480px; */
+    padding-top: 12%;
+    padding-left: 4.7%;
+    padding-right: 4.7%;
     color: #ffffff;
 }
