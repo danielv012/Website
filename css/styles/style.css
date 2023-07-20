@@ -334,7 +334,7 @@ nav ul li a:hover::after{
 
 #projects{
     /* padding-top: 480px; */
-    padding-top: 12%;
+    padding-top: 20%;
     padding-left: 4.7%;
     padding-right: 4.7%;
     color: #ffffff;
@@ -344,3 +344,22 @@ nav ul li a:hover::after{
     position: relative;
 }
 
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+
+.project{
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.project img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
