@@ -329,3 +329,18 @@ nav ul li a:hover::after{
     transition: .25s;
     
 }
+
+/* ------------- PROJECTS --------------- */
+
+#projects{
+    /* padding-top: 480px; */
+    padding-top: 12%;
+    padding-left: 4.7%;
+    padding-right: 4.7%;
+    color: #ffffff;
+}
+
+#projects h1{
+    position: relative;
+}
+
