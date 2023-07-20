@@ -34,9 +34,9 @@ body{
     box-shadow: -.3125rem -.3125rem 0rem rgb(0, 0, 0);
     
     
-    border: .3125rem solid #000000;
+
     outline: .3125rem solid #ffffff;
-    outline-offset: .1875rem;
+    outline-offset: .55rem;
     /* margin-top: 5%; */
     /* margin-left: 9%; */
 
@@ -159,8 +159,8 @@ nav ul li a:hover::after{
 .about-col-1{
     flex-basis: 45%;
     text-align: left;
-    padding-right: 1.25rem;
-    font-size: 1.25rem;
+    padding-right: 1.6rem;
+    font-size: 1.45rem;
     align-self: flex-start;
 }
 
@@ -174,13 +174,14 @@ nav ul li a:hover::after{
     padding-top: 6.25rem;
 }
 
+
+
  /* --------IMAGE 2 --------- */
 .about-col-2 img{
     width: 100%;
     border-radius: 3.125rem;
-    border: .3125rem solid #000000;
     outline: .3125rem solid #ffffff;
-    outline-offset: .1875rem;
+    outline-offset: .55rem;
 }
 
 .sub-title{
@@ -257,4 +258,53 @@ nav ul li a:hover::after{
     padding-left: 4.7%;
     padding-right: 4.7%;
     color: #ffffff;
+}
+
+#research h1{
+    position: relative;
+    left: -250px;
+}
+
+.research-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin-top: 20px;
+    margin-right: 500px;
+}
+
+.research-list div{
+    background: #6a00ff2d;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 40px;
+    transition: .25s;
+}
+
+.research-list div i{
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+.research-list div h2{
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 8px;
+
+}
+
+.research-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.research-list div:hover{
+    background: #6a00ff51;
+    transform: translateY(-10px);
+    transition: .25s;
+    
 }
