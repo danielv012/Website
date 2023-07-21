@@ -13,12 +13,14 @@
     <div id="header">
       <div class="container">
         <nav>
-          <ul>
+          <ul id="sidemenu">
             <li><a href="#about-anchor">About</a></li>
             <li><a href="#">Research</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="#">Contact</a></li>
+            <i class="fa-solid fa-xmark" style="color: #ffffff;" onclick="closeMenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="openMenu()"></i>
         </nav>
       </div>
     </div>
@@ -188,6 +190,7 @@
     <!-- Script for switching about me tab sections -->
   <script src="js/tab_script.js"></script>
   <script src="js/img_flip.js"></script>
+  <script src="js/menu_toggle.js"></script>
 
   </body>
 </html>
