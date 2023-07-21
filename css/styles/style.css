@@ -13,6 +13,10 @@ body{
     background-color: #000000;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .flip-animation{
     animation: flip .75s ease;
     transform-style: preserve-3d;
@@ -146,7 +150,7 @@ nav ul li a:hover::after{
 /* ------------- ABOUT --------------- */
 
 #about{
-    padding-top: 23.3%;
+    padding-top: 38%;
     padding-left: 4.7%;
     padding-right: 4.7%;
     color: #ffffff;
@@ -273,6 +277,7 @@ nav ul li a:hover::after{
     padding-top: 12%;
     padding-left: 4.7%;
     padding-right: 4.7%;
+    margin-bottom: 20%;
     color: #ffffff;
 }
 
@@ -344,6 +349,7 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
     margin-top: 40px;
+    height: 600px;
 }
 
 .project{
