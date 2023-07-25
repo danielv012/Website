@@ -115,7 +115,7 @@ nav ul li a:hover::after{
 
 /* ---------- INTRODUCTION ---------- */
 
-.introduction{
+#introduction{
     font-size: 2.1875rem;
     margin-left: 8%;
     margin-top: 3%;
@@ -127,7 +127,7 @@ nav ul li a:hover::after{
     padding-top: 2%;
 }
 
-.introduction p{
+#introduction p{
     text-shadow: #000000 0rem 0rem .625rem;
     font-weight: 300;
     margin-left: .1%;
@@ -151,10 +151,11 @@ nav ul li a:hover::after{
 /* ------------- ABOUT --------------- */
 
 #about{
-    padding-top: 25%;
-    padding-left: 4.7%;
-    padding-right: 4.7%;
+    padding-top: 15%;
+    padding-left: 4%;
+    padding-right: 4%;
     color: #ffffff;
+    text-shadow: #000000 0rem 0rem .625rem;
 }
 
 .row{
@@ -165,10 +166,10 @@ nav ul li a:hover::after{
 
 .about-col-1{
     flex-basis: 45%;
+    
     text-align: left;
     padding-right: 1.6rem;
-    font-size: 1.45rem;
-    align-self: flex-start;
+    font-size: 1.25rem;
 }
 
 .sub-title{
@@ -213,13 +214,13 @@ nav ul li a:hover::after{
 .tab-titles{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 1.25rem 0 1.5rem;
-    align-items: flex-start
+    align-items: center;
 }
 
 .tab-titles p{
-    font-size: 1.875rem;
+    font-size: 1.575rem;
     transition: .25s;
 }
 
@@ -229,8 +230,7 @@ nav ul li a:hover::after{
 }
 
 .tab-links{
-    margin-right: 3.125rem;
-    font-size: 1.25rem;
+    margin-right: 1.825rem;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -256,9 +256,42 @@ nav ul li a:hover::after{
     margin: .625rem 0;
 }
 
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.icons ul{
+    list-style: none;
+    position: relative;
+    bottom: 0rem;
+    right: 0;
+    margin-bottom: 2.7rem;
+    
+}
+
+.icons img{
+    width: 60px;
+    margin-right: .5rem;
+    margin-top: 2.7rem;
+    /* filter: drop-shadow(.04rem .04rem 0 rgb(255, 255, 255)); */
+}
+
+.tab-contents ul li f{
+    color: rgb(151, 151, 151);
+    text-align: end;
+}
+
 .tab-contents ul li span{
-    color: #bf86ff;
+    color: #d1a9ff;
     font-size: 1.5625rem;
+}
+
+.tab-contents ul li::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .tab-contents{
@@ -276,9 +309,9 @@ nav ul li a:hover::after{
 #research{
     /* padding-top: 480px; */
     padding-top: 8%;
-    padding-left: 4.7%;
-    padding-right: 4.7%;
-    margin-bottom: 20%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 13%;
     color: #ffffff;
 }
 
@@ -335,9 +368,9 @@ nav ul li a:hover::after{
 
 #projects{
     /* padding-top: 480px; */
-    padding-top: 10%;
-    padding-left: 4.7%;
-    padding-right: 4.7%;
+    padding-top: 0%;
+    padding-left: 4%;
+    padding-right: 4%;
     color: #ffffff;
 }
 
@@ -350,7 +383,7 @@ nav ul li a:hover::after{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 40px;
     margin-top: 40px;
-    height: 700px;
+    height: 600px;
 }
 
 .project{
@@ -422,7 +455,9 @@ nav ul li a:hover::after{
     color: #fff;
     font-size: 20px;
     font-weight: 500;
+    background: #6a00ff4f;
     transition: background 0.5s;
+    
 }
 
 .btn:hover{
@@ -434,10 +469,11 @@ nav ul li a:hover::after{
 #contact{
     /* padding-top: 480px; */
     padding-top: 15%;
-    padding-bottom: 10%;
-    padding-left: 4.7%;
-    padding-right: 4.7%;
+    padding-bottom: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
     color: #ffffff;
+    text-shadow: #0000005c 0 0 1.225rem;
 }
 
 #contact .sub-title{
@@ -482,6 +518,11 @@ nav ul li a:hover::after{
 .btn.btn2{
     display: inline-block;
     background:#6a00ff55;
+    text-shadow: none;
+}
+
+.btn.btn2:hover{
+    background: #6a00ff;
 }
 
 .contact-right form{
