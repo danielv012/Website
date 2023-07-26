@@ -120,7 +120,10 @@ nav ul li a:hover::after{
 
 .introduction-text{
     margin-left: -2%;
+    margin-top: -.5%;
     padding-top: 2%;
+    position: relative;
+    top: 0vw;
 }
 
 #introduction p{
@@ -141,7 +144,6 @@ nav ul li a:hover::after{
 #name {
     font-size: 5.3125rem;
     font-weight: 800;
-    margin-top: -.5%;
     margin-left: -.1%;
     text-shadow: #0000005c 0 0 1.225rem;
 }
@@ -650,7 +652,10 @@ nav .fa-solid{
         display: block;
         font-size: 25px;
     }
-
-    
-
 }
+
+@media screen and (min-width: 2000px) {
+    .introduction-text{
+        margin-top: 2vw;
+    }
+  }
