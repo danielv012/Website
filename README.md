@@ -1,5 +1,5 @@
 # Website
-Self-explanatory. This repository holds the work for my personal website. I'll use it to not only expand my skills for front-end development, but to showcase the work that I do elsewhere.
+This repository holds the source code for my personal website. I'll use it to not only expand my skills for front-end development, but to showcase the work that I do elsewhere.
 
 # TODO:
 - [ ] Fix research section bouncing up and down because of tabs
