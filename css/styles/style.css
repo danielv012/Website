@@ -473,25 +473,102 @@ nav ul li a:hover::after{
     position: relative;
 }
 
-.project-list{
+#projects p{
+    font-size: 1.15rem;
+}
+
+#projects input{
+    display: none;
+}
+
+#s1:checked~.project-list #slide2,
+#s2:checked~.project-list #slide3,
+#s3:checked~.project-list #slide1{
+    filter: drop-shadow(0 0 3rem rgb(0, 0, 0));
+    transform: translate3d(40%, 0, -5rem);
+}
+
+#s1:checked~.project-list #slide2 img,
+#s2:checked~.project-list #slide3 img,
+#s3:checked~.project-list #slide1 img{
+    opacity: 70%;
+}
+
+#s1:checked~.project-list #slide3,
+#s2:checked~.project-list #slide1,
+#s3:checked~.project-list #slide2{
+    filter: drop-shadow(0 0 3rem rgb(0, 0, 0));
+    transform: translate3d(-40%, 0, -5rem);
+}
+
+#s1:checked~.project-list #slide3 img,
+#s2:checked~.project-list #slide1 img,
+#s3:checked~.project-list #slide2 img{
+    opacity: 70%;
+}
+
+#s1:checked~.project-list #slide1,
+#s2:checked~.project-list #slide2,
+#s3:checked~.project-list #slide3{
+    filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
+    transform: translate3d(0%, 0, 0);
+}
+
+#projects .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+
+/* .project-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(18.75vw, 1fr));
     grid-gap: 2.5vw;
     margin-top: 2.5vw;
     height: 37.5vw;
+} */
+
+.project-list{
+    position: relative;
+    height: 40rem;
+    width: 30rem;
+    margin-top: 1rem;
+    perspective: 50rem;
+    transform-style: preserve-3d;
+    display: flex;
+}
+
+.project-list label{
+    position: absolute;
+    flex: 0 0 18rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform .5s ease;
 }
 
 .project{
-    border-radius: 1.875vw;
+    border-radius: 2.5vw;
     position: relative;
     overflow: hidden;
+    background-color: #000000;
 }
+
+
+
 
 .project img{
     width: 100%;
     border-radius: 1.875vw;
     display: block;
-    transition: transform .5s;
+    transition: transform .5s, opacity .5s;
 }
 
 .layer{
@@ -515,7 +592,12 @@ nav ul li a:hover::after{
 
 .layer h3{
     font-weight: 800;
-    font-size: 1.875rem;
+    font-size: 2rem;
+}
+
+.layer h4{
+    font-weight: 400;
+    font-size: 1.5rem;
 }
 
 .layer a{
