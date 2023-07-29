@@ -1,6 +1,6 @@
 var tabLinks = document.getElementsByClassName("tab-links");
 var tabContents = document.getElementsByClassName("tab-contents");
-var iconsTab = document.querySelector('.icons');
+var iconsTab = document.querySelector('#about .icons');
 
 function opentab(tabname){
 

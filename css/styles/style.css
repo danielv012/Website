@@ -18,13 +18,7 @@ html {
 }
 
 .flip-animation{
-    animation: flip .75s ease;
-    transform-style: preserve-3d;
-}
-
-@keyframes flip{
-    0% {transform: rotateY(0deg);}
-    100% {transform: rotateY(180deg);}
+    transform: rotateY(180deg);
 }
 
 c:hover{
@@ -44,21 +38,7 @@ d{
     align-items: center;
 }
 
-.headshot{
-    width: 26.125vw;
-    max-width: 50rem;
-    border-radius: 50%;
-    background-image: url(../../assets/img/headshot.png);
-    background-size: cover;
-    background-position: center;
-    /* create a drop shadow */
-    outline: .3125vw solid #ffffff;
-    outline-offset: .45vw;
-    /* margin-top: 5%; */
-    /* margin-left: 9%; */
 
-    padding: 0%;
-}
 
 .container{
     padding: .3125vw;
@@ -122,6 +102,119 @@ nav ul li a:hover::after{
     margin-left: 7.08%;
     margin-top: 0.4%;
     text-align: left;
+    position: relative;
+}
+
+#introduction .icons{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: .5vw;
+    left: 27vw;
+    filter: drop-shadow(0 0 1vw rgb(0, 0, 0));
+    z-index: 4;
+
+}
+
+#introduction .icons img{
+    width: 3.2vw;
+    max-width: 6rem;
+    margin-bottom: 1vw;
+    transition: .5s;
+
+}
+
+#introduction .icons img:hover{
+    width: 3.8vw;
+    max-width: 6rem;
+    margin-bottom: 1vw;
+    transition: .5s;
+
+}
+
+#linkedin{
+    position: relative;
+    left: -3.4vw;
+}
+
+#github{
+    position: relative;
+    left: -.45vw;
+}
+
+#twitter{
+    position: relative;
+    top: .8vw;
+    left: .8vw;
+}
+
+#instagram{
+    position: relative;
+    top: 1.5vw;
+    left: .4vw;
+}
+
+#introduction .imageContainer{
+    position: relative;
+    width: 26.125vw;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+#introduction .front{
+    width: 26.125vw;
+    max-width: 50rem;
+    height: 26.125vw;
+    border-radius: 50%;
+
+    position: absolute;
+    backface-visibility: hidden;
+    color: #fff;
+}
+
+#introduction .back{
+    width: 26.125vw;
+    height: 26.125vw;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    background: #6a00ff9b;
+    outline: .3125vw solid #ffffff;
+    outline-offset: .45vw;
+    color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+}
+
+#introduction .back p{
+    position: relative;
+    top: 3vw;
+    padding: 3.5vw;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+#introduction .imageContainer img:hover{
+    transform: scale(1.03);
+    transition: transform .25s;
+}
+
+#introduction .imageContainer:hover{
+    cursor: pointer;
+}
+
+.headshot{
+    width: 26.125vw;
+    max-width: 50rem;
+    border-radius: 50%;
+    background-image: url(../../assets/img/headshot.png);
+    background-size: cover;
+    background-position: center;
+    /* create a drop shadow */
+    outline: .3125vw solid #ffffff;
+    outline-offset: .45vw;
+    /* margin-top: 5%; */
+    /* margin-left: 9%; */
+    transition: transform .25s;
 }
 
 .introduction-text{
@@ -154,6 +247,10 @@ nav ul li a:hover::after{
     margin-left: -.1%;
     text-shadow: #0000005c 0 0 1.225rem;
 }
+
+
+
+
 
 /* ------------- ABOUT --------------- */
 
@@ -191,30 +288,68 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 27.5%;
     padding-top: 5.25vw;
-}
-
-.about-col-2 imageContainer{
     position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: 100%;
 }
 
+/* --------IMAGE 2 --------- */
 
+#about .imageContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
 
- /* --------IMAGE 2 --------- */
-.about-col-2 img{
-    width: 23.2vw;
+#about .front{
+    position: absolute;
+    width: 100%;
+    height: 33.2vw;
+    backface-visibility: hidden;
+    background: #6a00ff;
+    color: #fff;
+    border-radius: 3.125vw;
+}
+
+#about .back{
+    position: absolute;
+    width: 100%;
+    height: 33.2vw;
+    backface-visibility: hidden;
+    background: #6a00ff9b;
+    border-radius: 3.125vw;
+    outline: .3125vw solid #ffffff;
+    outline-offset: .45vw;
+    color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+}
+
+#about .back p{
+    margin-top: 2rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    font-size: 1.4rem;
+}
+ 
+#about .front img{
+    width: 100%;
+    height: 100%;
     border-radius: 3.125vw;
     outline: .3125vw solid #ffffff;
     outline-offset: .45vw;
     transition: transform .25s;
     filter: drop-shadow(0 0 2vw rgb(0, 0, 0));
+    backface-visibility: hidden;
+
+    
 }
 
-.about-col-2 img:hover{
-    transform: scale(1.02);
-    transition: .25s;
+#about .imageContainer img:hover{
+    transform: scale(1.03);
+    transition: transform .25s;
+}
+
+#about .imageContainer:hover{
     cursor: pointer;
 }
 
@@ -268,12 +403,12 @@ nav ul li a:hover::after{
     margin: .625vw 0;
 }
 
-.icons{
+#about .icons{
     display: flex;
     flex-direction: column;
 }
 
-.icons ul{
+#about .icons ul{
     list-style: none;
     position: relative;
     bottom: 0rem;
@@ -281,7 +416,7 @@ nav ul li a:hover::after{
     
 }
 
-.icons img{
+#about .icons img{
     width: 3.75rem;
     margin-right: .5rem;
     margin-bottom: 2.7rem;
@@ -477,6 +612,10 @@ nav ul li a:hover::after{
     font-size: 1.15rem;
 }
 
+#projects a{
+    z-index: 4;
+}
+
 #projects input{
     display: none;
 }
@@ -589,7 +728,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0,0,0,0.6), #6a00ff);
+    background: linear-gradient(rgba(0,0,0,0.6), #6a00ffbd);
     border-radius: .625vw;
     position: absolute;
     left: 0;

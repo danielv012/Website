@@ -1,11 +1,36 @@
-const flipImage = document.getElementById('flipImage2');
+const headshotImage = document.querySelector('#introduction .imageContainer');
 let isFlipped = false;
 
-function removeFlipClass(){
-    flipImage.classList.remove('flip-animation');
+function removeFlipClassH(){
+    headshotImage.classList.remove('flip-animation');
 }
 
-flipImage.addEventListener('click', function(){
-    flipImage.classList.add('flip-animation');
-    setTimeout(removeFlipClass, 1000);
+
+headshotImage.addEventListener('click', function(){
+    if(isFlipped){
+        isFlipped = false;
+        removeFlipClassH();
+    }
+    else{
+        isFlipped = true;
+        headshotImage.classList.add('flip-animation');
+    }
+});
+
+const aboutImage = document.querySelector('#about .imageContainer');
+let isFlippedB = false;
+
+function removeFlipClassA(){
+    aboutImage.classList.remove('flip-animation');
+}
+
+aboutImage.addEventListener('click', function(){
+    if(isFlippedB){
+        isFlippedB = false;
+        removeFlipClassA();
+    }
+    else{
+        isFlippedB = true;
+        aboutImage.classList.add('flip-animation');
+    }
 });
