@@ -463,7 +463,7 @@ nav ul li a:hover::after{
 
 #research{
     /* padding-top: 480px; */
-    padding-top: 7%;
+    padding-top: 12%;
     padding-left: 4%;
     padding-right: 4%;
     color: #ffffff;
@@ -538,8 +538,8 @@ nav ul li a:hover::after{
 
 .research-images iframe{
     border-radius: 3rem;
-    outline: .25vw solid #ffffff;
-    outline-offset: .45vw;
+    outline: .25rem solid #ffffff;
+    outline-offset: .45rem;
     filter: drop-shadow(0 0 1vw rgb(0, 0, 0));
     position: relative;
 }
@@ -560,8 +560,8 @@ nav ul li a:hover::after{
 .rpic1 img{
     width: 18rem;
     border-radius: 3rem;
-    outline: .25vw solid #ffffff;
-    outline-offset: .45vw;
+    outline: .25rem solid #ffffff;
+    outline-offset: .45rem;
     filter: drop-shadow(0 0 1vw rgb(0, 0, 0));
 }
 
@@ -588,8 +588,8 @@ nav ul li a:hover::after{
 .rpic2 img{
     width: 12rem;
     border-radius: 3rem;
-    outline: .25vw solid #ffffff;
-    outline-offset: .45vw;
+    outline: .25rem solid #ffffff;
+    outline-offset: .45rem;
     filter: drop-shadow(0 0 1vw rgb(0, 0, 0));
 }
 
@@ -807,7 +807,7 @@ nav ul li a:hover::after{
 /* ------------- CONTACT --------------- */
 
 #contact{
-    padding-top: 15%;
+    padding-top: 20%;
     padding-bottom: 3%;
     padding-left: 4%;
     padding-right: 4%;
@@ -846,7 +846,7 @@ nav ul li a:hover::after{
 
 .social-icons a{
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin-right: .94vw;
     color: #fff;
     display: inline-block;
@@ -855,7 +855,7 @@ nav ul li a:hover::after{
 
 .social-icons a:hover{
     transform: translateY(-.31vw);
-    font-size: 2.4rem;
+    font-size: 2.8rem;
 }
 
 .btn.btn2{
@@ -910,6 +910,13 @@ nav .fa-solid{
     display: block;
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+.copyright a{
+    position: absolute;
+    right: 1vw;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
 /* ------------- CSS for MOBILE SCREEN ------------ */
