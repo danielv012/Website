@@ -4,6 +4,7 @@ const msg = document.getElementById("msg")
 
 form.addEventListener('submit', e => {
 e.preventDefault()
+msg.innerHTML = "Sending..."
 fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .then(response => {
         msg.innerHTML = "Message sent successfully!"

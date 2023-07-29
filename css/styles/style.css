@@ -102,7 +102,7 @@ nav ul li a::after{
     background: #6a00ff;
     position: absolute;
     left: 0;
-    bottom: -.375vw;
+    bottom: -.275rem;
     transition: 0.3s;
 }
 
@@ -284,7 +284,7 @@ nav ul li a:hover::after{
 .icons img{
     width: 3.75rem;
     margin-right: .5rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.7rem;
     filter: drop-shadow(0 0 .35rem rgb(0, 0, 0));
 }
 
@@ -328,7 +328,7 @@ nav ul li a:hover::after{
 
 #research{
     /* padding-top: 480px; */
-    padding-top: 4%;
+    padding-top: 7%;
     padding-left: 4%;
     padding-right: 4%;
     color: #ffffff;
@@ -463,7 +463,7 @@ nav ul li a:hover::after{
 
 #projects{
     /* padding-top: 480px; */
-    padding-top: 3%;
+    padding-top: 5%;
     padding-left: 4%;
     padding-right: 4%;
     color: #ffffff;
@@ -481,37 +481,43 @@ nav ul li a:hover::after{
     display: none;
 }
 
-#s1:checked~.project-list #slide2,
-#s2:checked~.project-list #slide3,
-#s3:checked~.project-list #slide1{
+#s1:checked ~ .project-list #slide2,
+#s2:checked ~ .project-list #slide3,
+#s3:checked ~ .project-list #slide1{
     filter: drop-shadow(0 0 3rem rgb(0, 0, 0));
     transform: translate3d(40%, 0, -5rem);
 }
 
-#s1:checked~.project-list #slide2 img,
-#s2:checked~.project-list #slide3 img,
-#s3:checked~.project-list #slide1 img{
-    opacity: 70%;
+#s1:checked ~ .project-list #slide2 .cover,
+#s2:checked ~ .project-list #slide3 .cover,
+#s3:checked ~ .project-list #slide1 .cover{
+    opacity: .3;
 }
 
-#s1:checked~.project-list #slide3,
-#s2:checked~.project-list #slide1,
-#s3:checked~.project-list #slide2{
+#s1:checked ~ .project-list #slide3,
+#s2:checked ~ .project-list #slide1,
+#s3:checked ~ .project-list #slide2{
     filter: drop-shadow(0 0 3rem rgb(0, 0, 0));
     transform: translate3d(-40%, 0, -5rem);
 }
 
-#s1:checked~.project-list #slide3 img,
-#s2:checked~.project-list #slide1 img,
-#s3:checked~.project-list #slide2 img{
-    opacity: 70%;
+#s1:checked ~ .project-list #slide3 .cover,
+#s2:checked ~ .project-list #slide1 .cover,
+#s3:checked ~ .project-list #slide2 .cover{
+    opacity: .3;
 }
 
-#s1:checked~.project-list #slide1,
-#s2:checked~.project-list #slide2,
-#s3:checked~.project-list #slide3{
+#s1:checked ~ .project-list #slide1,
+#s2:checked ~ .project-list #slide2,
+#s3:checked ~ .project-list #slide3{
     filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
     transform: translate3d(0%, 0, 0);
+}
+
+#s1:checked ~ .project-list #slide1 .cover,
+#s2:checked ~ .project-list #slide2 .cover,
+#s3:checked ~ .project-list #slide3 .cover{
+    opacity: 0;
 }
 
 #projects .container{
@@ -536,8 +542,8 @@ nav ul li a:hover::after{
 
 .project-list{
     position: relative;
-    height: 40rem;
-    width: 30rem;
+    height: 40vw;
+    width: 30vw;
     margin-top: 1rem;
     perspective: 50rem;
     transform-style: preserve-3d;
@@ -559,9 +565,9 @@ nav ul li a:hover::after{
     position: relative;
     overflow: hidden;
     background-color: #000000;
+    height: 40vw;
+    outline: .1125vw solid #ffffff;
 }
-
-
 
 
 .project img{
@@ -569,6 +575,15 @@ nav ul li a:hover::after{
     border-radius: 1.875vw;
     display: block;
     transition: transform .5s, opacity .5s;
+}
+
+.cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 4;
+    transition: opacity .25s;
 }
 
 .layer{
@@ -633,7 +648,7 @@ nav ul li a:hover::after{
     font-size: 1.25rem;
     font-weight: 500;
     background: #6a00ff4f;
-    transition: background 0.5s;
+    transition: background 0.3s;
     
 }
 
@@ -641,15 +656,28 @@ nav ul li a:hover::after{
     background: #6a00ff;
 }
 
+.static {
+    position:absolute;
+    background: white;
+  }
+
+.static:hover {
+    opacity:0;
+}
+
 /* ------------- CONTACT --------------- */
 
 #contact{
-    padding-top: 10%;
+    padding-top: 15%;
     padding-bottom: 3%;
     padding-left: 4%;
     padding-right: 4%;
     color: #ffffff;
     text-shadow: #0000005c 0 0 1.225rem;
+}
+
+#contact .container{
+    overflow: hidden;
 }
 
 #contact .sub-title{
@@ -671,7 +699,7 @@ nav ul li a:hover::after{
 .contact-left p{
     color: #fff;
     margin-right: .94vw;
-    font-size: 1.56rem;
+    font-size: 1.7rem;
 }
 .social-icons{
     margin-top: 1.875vw;
@@ -679,16 +707,16 @@ nav ul li a:hover::after{
 
 .social-icons a{
     text-decoration: none;
-    font-size: 1.56rem;
+    font-size: 2rem;
     margin-right: .94vw;
     color: #fff;
     display: inline-block;
-    transition: transform 0.5s
+    transition: transform 0.5s, font-size 0.5s;
 }
 
 .social-icons a:hover{
-    color: #ff04ff;
     transform: translateY(-.31vw);
+    font-size: 2.4rem;
 }
 
 .btn.btn2{
@@ -698,7 +726,7 @@ nav ul li a:hover::after{
 }
 
 .btn.btn2:hover{
-    background: #6a00ff;
+    background: #6a00ff96;
 }
 
 .contact-right form{
@@ -741,6 +769,8 @@ nav .fa-solid{
     color: #ffffff;
     margin-top: -2.5vw;
     display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 /* ------------- CSS for MOBILE SCREEN ------------ */
