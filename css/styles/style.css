@@ -670,15 +670,6 @@ nav ul li a:hover::after{
     margin-bottom: 4rem;
 }
 
-
-/* .project-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18.75vw, 1fr));
-    grid-gap: 2.5vw;
-    margin-top: 2.5vw;
-    height: 37.5vw;
-} */
-
 .project-list{
     position: relative;
     height: 40vw;
@@ -793,6 +784,15 @@ nav ul li a:hover::after{
     height: 100%;
 }
 
+.static {
+    position:absolute;
+    background: white;
+  }
+
+.static:hover {
+    opacity:0;
+}
+
 .btn{
     display: block;
     margin: 3.125vw auto;
@@ -813,14 +813,7 @@ nav ul li a:hover::after{
     background: #6a00ff;
 }
 
-.static {
-    position:absolute;
-    background: white;
-  }
 
-.static:hover {
-    opacity:0;
-}
 
 /* ------------- CONTACT --------------- */
 
