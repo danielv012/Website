@@ -707,6 +707,11 @@ nav ul li a:hover::after{
     transition: transform .5s, opacity .5s;
 }
 
+.project video{
+    controls: none;
+    pointer-events: none;
+}
+
 
 .cover{
     position: absolute;
