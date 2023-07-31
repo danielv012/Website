@@ -707,6 +707,7 @@ nav ul li a:hover::after{
     transition: transform .5s, opacity .5s;
 }
 
+
 .cover{
     position: absolute;
     width: 100%;
