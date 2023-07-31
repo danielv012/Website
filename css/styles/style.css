@@ -767,6 +767,24 @@ nav ul li a:hover::after{
     text-align: center;
 }
 
+.frameworks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.25vw;
+    width: 80%;
+    height: auto;
+}
+
+.frameworks img{
+    width: 3.875vw;
+    margin-right: 1vw;
+    margin-bottom: .5vw;
+    border-radius: 0px;
+    filter: drop-shadow(0 0 1vw rgba(0, 0, 0, 0.5));
+}
+
 .project:hover img{
     transform: scale(1.05);
 }
