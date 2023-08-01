@@ -71,7 +71,7 @@
               especially in robotics/autonomy, and I'm always on the lookout for opportunities to make a 
               positive impact on both the people
               and the planet. <br></br>  Alright, that's enough corniness.
-              Feel free to click through the tabs below or <c><a href="#contact-anchor" style="color: #ffffff;">contact me</a></c> to learn more! 
+              Feel free to click through the tabs below or <c><a href="#contact-anchor">contact me</a></c> to learn more! 
               Thanks for stopping by.
             </p>
 
@@ -83,42 +83,42 @@
             </div>
             <div class="tab-contents" id="skills">
               <ul>
-                <li><span>Programming</span><br>Experienced backend developer in control and autonomous systems, with a side of machine learning & networking.
-                  <br><i><f>C/++/#, Java, Python, Bash/Shell, HTML, CSS, JS, MIPS</f></i></li>
-                <li><span>Leadership</span><br>Seasoned leader with a successful track record of managing and motivating teams & individuals to achieve project goals.</li>
-                <li><span>Collaboration</span><br>Proven collaborator with 4+ years of experience working and communicating effectively with others in small to large groups.</li>
+                <li><span>Programming</span><p>Experienced backend developer in control and autonomous systems, with a side of machine learning & networking.
+                  <br><i><f>C/++/#, Java, Python, Bash/Shell, HTML, CSS, JS, MIPS</f></i></p></li>
+                <li><span>Leadership</span><p>Seasoned leader with a successful track record of managing and motivating teams & individuals to achieve project goals.</p></li>
+                <li><span>Collaboration</span><p>Proven collaborator with 4+ years of experience working and communicating effectively with others in small to large groups.</p></li>
               </ul>
             </div>
             <div class="tab-contents active-tab" id="experience">
               <ul>
-                <li><span>Software Engineering Intern</span><br>Cisco <br><i><f>May 2023 - August 2023</f></i></li>
-                <li><span>Team Lead</span><br>Nova at UT Dallas <br><i><f>Sept. 2022 - Current</f></i></li>
-                <li><span>Co-Captain, Programming Lead, Design Lead</span><br>FIRST Robotics, FRC Team  <br><i><f>Aug. 2019 - May 2022</f></i></li>
+                <li><span>Software Engineering Intern</span><p>Cisco <br><i><f>May 2023 - August 2023</f></i></p></li>
+                <li><span>Team Lead</span><p>Nova at UT Dallas <br><i><f>Sept. 2022 - Current</f></i></p></li>
+                <li><span>Co-Captain, Programming Lead, Design Lead</span><p>FIRST Robotics, FRC Team  <br><i><f>Aug. 2019 - May 2022</f></i></p></li>
               </ul>
             </div>
             <div class="tab-contents" id="education">
               <ul>
                 <li><span>The University of Texas at Dallas</span>
-                  <br>B.S., <i>Computer Science</i>, Minor: <i>Cognitive Science</i>
-                  <br><i><f>2022 - 2024</f></i>
+                  <p>B.S., <i>Computer Science</i>, Minor: <i>Cognitive Science</i>
+                  <br><i><f>2022 - 2024</f></i></p>
                 </li>
                 <li><span>Marquette Senior High School</span>
-                  <br>Go Mustangs!
-                  <br><i><f>2018 - 2022</f></i>
+                  <p>Go Mustangs!
+                  <br><i><f>2018 - 2022</f></i></p>
                 </li>
               </ul>
             </div>
             <div class="tab-contents" id="hobbies">
               <ul>
-                <li><span>Sports & Exercise</span><br>I'm on UTD Men's Ultimate Frisbee team! (WOOF x3) 
-                  Other times you'll find me at the climbing gym, running, or strength training.</li>
-                <li><span>Hobbies</span> <f>(2023)</f><br>Cooking: Korean Food</span>
+                <li><span>Sports & Exercise</span><p>I'm on UTD Men's Ultimate Frisbee team! (WOOF x3) 
+                  Other times you'll find me at the climbing gym, running, or strength training.</p></li>
+                <li><span>Hobbies</span> <f>(2023)</f><p>Cooking: Korean Food</span>
                 <br>Reading: Dune, Steve Jobs, Rich Dad Poor Dad
                 <br><f>Read: When Breath Becomes Air, HTWFAIP</f>
                 <br>Watching: Succession, TLOU
                 <br><f>Watched: BB, BCS, Beef, The Boys</f>
                 <br>Movies: Check out my <c><a href="https://letterboxd.com/vayman/" target="_blank" >Letterboxd</a></c><f>!</f>
-                <br>Playing: Video games w/ friends <d>(League of Legends)</d></li>
+                <br>Playing: Video games w/ friends <d>(League of Legends)</d></p></li>
               </ul>
             </div>
           </div>
@@ -303,42 +303,7 @@
   <script src="js/contact_form.js"></script>
   <script src="js/icon_margin_sizer.js"></script>
   <script src="js/video_player.js"></script>
-  <script>
-// Get all the slides and the radio inputs
-var slides = document.querySelectorAll('.project-list label');
-var radios = document.querySelectorAll('#projects input');
-
-// Variable to store the index of the previously checked radio input
-var prevCheckedIndex = Array.from(radios).findIndex(radio => radio.checked);
-
-// Function to update the z-index of the slides
-function updateZIndex() {
-    // Get the index of the currently checked radio input
-    var currCheckedIndex = Array.from(radios).findIndex(radio => radio.checked);
-
-    // Check if the carousel is rotating to the right or to the left
-    var isRotatingRight = (currCheckedIndex - prevCheckedIndex + radios.length) % radios.length === 1;
-
-    // Update the z-index of each slide
-    for (var i = 0; i < slides.length; i++) {
-        if (i === currCheckedIndex) {
-            slides[i].style.zIndex = '50'; // Bring the checked slide to the front
-        } else if (i === (currCheckedIndex + 1) % slides.length) {
-            slides[i].style.zIndex = isRotatingRight ? '1' : '2'; // Update the next slide based on the direction of rotation
-        } else {
-            slides[i].style.zIndex = isRotatingRight ? '2' : '1'; // Update the remaining slide based on the direction of rotation
-        }
-    }
-
-    // Update the index of the previously checked radio input
-    prevCheckedIndex = currCheckedIndex;
-}
-
-// Add a "change" event listener to each radio input
-for (var i = 0; i < radios.length; i++) {
-    radios[i].addEventListener('change', updateZIndex);
-}
-  </script>
+  <script src="js/carousel.js"></script>
   
   
 
