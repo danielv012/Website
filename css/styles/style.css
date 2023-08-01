@@ -214,6 +214,7 @@ nav ul li a:hover::after{
     /* create a drop shadow */
     outline: .3125rem solid #ffffff;
     outline-offset: .45rem;
+    filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
     /* margin-top: 5%; */
     /* margin-left: 9%; */
     transition: transform .25s;
@@ -1089,6 +1090,9 @@ nav .fa-solid{
         background: #6a00ff9b;
         color: rgb(255, 255, 255);
         transform: rotateY(180deg), translateZ(0);
+        outline: 0rem solid #ffffff;
+        outline-offset: 0rem;
+        border: #ffffff .5rem solid;
     }
 
     #introduction .back p{
@@ -1105,6 +1109,12 @@ nav .fa-solid{
         width: 23.125rem;
         max-width: 50rem;
         transition: transform .25s;
+
+        outline: 0rem solid #ffffff;
+        outline-offset: 0rem;
+        border: #ffffff .5rem solid;
+
+        box-sizing: border-boxs;
     }
 
     .introduction-text{
@@ -1212,8 +1222,9 @@ nav .fa-solid{
         backface-visibility: hidden;
         background: #6a00ff9b;
         border-radius: 3.125rem;
-        outline: .3125rem solid #ffffff;
-        outline-offset: .45rem;
+        outline: 0rem solid #ffffff;
+        outline-offset: 0rem;
+        border: #ffffff .3rem solid;
         color: rgb(255, 255, 255);
         transform: rotateY(180deg), translateZ(0);
     }
@@ -1229,8 +1240,9 @@ nav .fa-solid{
         width: 100%;
         height: 100%;
         border-radius: 3.125rem;
-        outline: .3125rem solid #ffffff;
-        outline-offset: .45rem;
+        outline: 0rem solid #ffffff;
+        outline-offset: 0rem;
+        border: #ffffff .3rem solid;
         transition: transform .25s;
         filter: drop-shadow(0 0 .8rem rgb(0, 0, 0));
         backface-visibility: hidden;
@@ -1300,6 +1312,8 @@ nav .fa-solid{
     #about .icons{
         display: flex;
         flex-direction: column;
+        position: absolute;
+        left: 0;
     }
 
     #about .icons ul{
@@ -1345,6 +1359,8 @@ nav .fa-solid{
 
     .tab-contents{
         display: none;
+        position: relative;
+        left: 1.5rem;
     }
 
     .tab-contents.active-tab{
@@ -1423,21 +1439,21 @@ nav .fa-solid{
     .research-images iframe{
         width: 100%;
         border-radius: 1rem;
-        outline: .25rem solid #ffffff;
-        outline-offset: .45rem;
+        outline: 0rem solid #ffffff;
+        outline-offset: 0rem;
+        border: #ffffff .4rem solid;
         filter: drop-shadow(0 0 1vw rgb(0, 0, 0));
     }
 
     .research-pictures{
         right: 0rem;
         position: relative;
-        margin-top: 1rem;
     }
 
     .rpic1{
         margin-left: 0rem;
         position: relative;
-        top: 1.2rem;
+        top: 2rem;
         left: 0rem;
         z-index: 2;
         transition: transform .25s;
@@ -1446,8 +1462,9 @@ nav .fa-solid{
     .rpic1 img{
         width: 13rem;
         border-radius: 2rem;
-        outline: .25rem solid #ffffff;
-        outline-offset: .45rem;
+        outline: 0rem solid #ffffff;
+        outline-offset: 0rem;
+        border: #ffffff .4rem solid;
         filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
     }
 
@@ -1471,13 +1488,14 @@ nav .fa-solid{
     }
 
     .rpic2 img{
-        width: 8rem;
+        width: 9rem;
         border-radius: 2rem;
-        outline: .25rem solid #ffffff;
-        outline-offset: .45rem;
+        outline: 0rem solid #ffffff;
+        outline-offset: 0rem;
+        border: #ffffff .4rem solid;
         filter: drop-shadow(0 0 1vw rgb(0, 0, 0));
         position: relative;
-        right: -10rem;
+        right: -8rem;
     }
 
     /* ------------- PROJECTS --------------- */
@@ -1581,7 +1599,8 @@ nav .fa-solid{
         overflow: hidden;
         background-color: #000000;
         height: 23rem;
-        outline: .15rem solid #ffffff;
+        outline: 0rem solid #ffffff;
+        border: #ffffff .2rem solid;
         z-index: 40;
     }
 
