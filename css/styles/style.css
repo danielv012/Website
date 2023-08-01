@@ -717,6 +717,7 @@ nav ul li a:hover::after{
     height: 100%;
     background-color: #000000;
     transition: opacity .25s;
+    z-index: 100;
 }
 
 .layer{
@@ -785,15 +786,6 @@ nav ul li a:hover::after{
 
 .project:hover .layer{
     height: 100%;
-}
-
-.static {
-    position:absolute;
-    background: white;
-  }
-
-.static:hover {
-    opacity:0;
 }
 
 .btn{
