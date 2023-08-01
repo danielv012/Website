@@ -1596,6 +1596,10 @@ nav .fa-solid{
         transition: transform .5s, opacity .5s;
     }
 
+    .project.active poster{
+        border-radius: 2.8rem;
+    }
+
     .cover{
         position: absolute;
         width: 100%;
