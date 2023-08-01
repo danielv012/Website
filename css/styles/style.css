@@ -210,8 +210,8 @@ nav ul li a:hover::after{
     background-size: cover;
     background-position: center;
     /* create a drop shadow */
-    outline: .3125vw solid #ffffff;
-    outline-offset: .45vw;
+    outline: .3125rem solid #ffffff;
+    outline-offset: .45rem;
     /* margin-top: 5%; */
     /* margin-left: 9%; */
     transition: transform .25s;
@@ -255,7 +255,7 @@ nav ul li a:hover::after{
 /* ------------- ABOUT --------------- */
 
 #about{
-    padding-top: 25%;
+    padding-top: 21%;
     padding-left: 4%;
     padding-right: 4%;
     color: #ffffff;
@@ -308,7 +308,7 @@ nav ul li a:hover::after{
     backface-visibility: hidden;
     background: #6a00ff;
     color: #fff;
-    border-radius: 3.125vw;
+    border-radius: 3.125rem;
 }
 
 #about .back{
@@ -317,9 +317,9 @@ nav ul li a:hover::after{
     height: 33.2rem;
     backface-visibility: hidden;
     background: #6a00ff9b;
-    border-radius: 3.125vw;
-    outline: .3125vw solid #ffffff;
-    outline-offset: .45vw;
+    border-radius: 3.125rem;
+    outline: .3125rem solid #ffffff;
+    outline-offset: .45rem;
     color: rgb(255, 255, 255);
     transform: rotateY(180deg);
 }
@@ -334,11 +334,11 @@ nav ul li a:hover::after{
 #about .front img{
     width: 100%;
     height: 100%;
-    border-radius: 3.125vw;
-    outline: .3125vw solid #ffffff;
-    outline-offset: .45vw;
+    border-radius: 3.125rem;
+    outline: .3125rem solid #ffffff;
+    outline-offset: .45rem;
     transition: transform .25s;
-    filter: drop-shadow(0 0 2vw rgb(0, 0, 0));
+    filter: drop-shadow(0 0 2rem rgb(0, 0, 0));
     backface-visibility: hidden;
 
     
@@ -362,7 +362,7 @@ nav ul li a:hover::after{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 1.25vw 0 1vw;
+    margin: 1.25rem 0 1rem;
     align-items: center;
 }
 
@@ -372,12 +372,12 @@ nav ul li a:hover::after{
 }
 
 .tab-titles p:hover{
-    text-shadow: 0 0 1.25vw #ffffff;
+    text-shadow: 0 0 1.25rem #ffffff;
     transition: text-shadow .25s;
 }
 
 .tab-links{
-    margin-right: 1.825vw;
+    margin-right: 1.825rem;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -463,7 +463,7 @@ nav ul li a:hover::after{
 
 #research{
     /* padding-top: 480px; */
-    padding-top: 12%;
+    padding-top: 6%;
     padding-left: 4%;
     padding-right: 4%;
     color: #ffffff;
@@ -471,7 +471,7 @@ nav ul li a:hover::after{
 
 #research h1{
     position: relative;
-    left: -14.5vw;
+    left: -11vw;
 }
 
 .research-list{
@@ -484,10 +484,10 @@ nav ul li a:hover::after{
 
 .research-header{
     background: #6a00ff2d;
-    padding: 2.5vw;
-    font-size: 1.25rem;
+    padding: 2.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
-    border-radius: 2.5vw;
+    border-radius: 2.5rem;
     transition: transform .25s;
     position: relative;
 }
@@ -497,19 +497,10 @@ nav ul li a:hover::after{
     padding-bottom: 1.875vw;
 }
 
-.research-header .nova-logo{
-    width: 6rem;
-    filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
-    position: absolute;
-    right: 1vw;
-    top: 1vw;
-}
-
 .research-header h2{
-    font-size: 2.1875rem;
+    font-size: 2rem;
     font-weight: 600;
-    margin-bottom: .5vw;
-
+    margin-bottom: .5rem;
 }
 
 .research-header a{
@@ -671,7 +662,7 @@ nav ul li a:hover::after{
 .project-list{
     position: relative;
     height: 40rem;
-    width: 33rem;
+    width: 32rem;
     margin-top: 2rem;
     perspective: 50rem;
     transform-style: preserve-3d;
@@ -695,8 +686,8 @@ nav ul li a:hover::after{
     position: relative;
     overflow: hidden;
     background-color: #000000;
-    height: 44rem;
-    outline: .12rem solid #ffffff;
+    height: 40rem;
+    outline: .15rem solid #ffffff;
     z-index: 40;
 }
 
@@ -707,9 +698,6 @@ nav ul li a:hover::after{
     display: block;
     transition: transform .5s, opacity .5s;
 }
-
-
-
 
 .cover{
     position: absolute;
@@ -724,7 +712,7 @@ nav ul li a:hover::after{
     width: 100%;
     height: 0;
     background: linear-gradient(rgba(0,0,0,0.6), #6a00ffbd);
-    border-radius: .625vw;
+    border-radius: .625rem;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -733,7 +721,7 @@ nav ul li a:hover::after{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 2.5vw;
+    padding: 0 2.5rem;
     text-align: center;
     font-size: .875rem;
     transition: height .35s;
@@ -742,11 +730,17 @@ nav ul li a:hover::after{
 .layer h3{
     font-weight: 800;
     font-size: 2rem;
+    text-shadow: 0 0 2rem rgb(0, 0, 0);
 }
 
 .layer h4{
     font-weight: 400;
     font-size: 1.5rem;
+    margin-bottom: .2rem;
+    text-shadow: 0 0 2rem rgb(0, 0, 0);
+}
+.layer p{
+    text-shadow: 0 0 2rem rgb(0, 0, 0);
 }
 
 .layer a{
@@ -767,15 +761,15 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 1.25vw;
-    width: 80%;
+    margin-top: .75rem;
+    width: 100%;
     height: auto;
 }
 
 .frameworks img{
-    width: 3.875vw;
-    margin-right: 1vw;
-    margin-bottom: .5vw;
+    width: 3rem;
+    margin-right: 1rem;
+    margin-bottom: .5rem;
     border-radius: 0px;
     filter: drop-shadow(0 0 1vw rgba(0, 0, 0, 0.5));
 }
@@ -813,7 +807,7 @@ nav ul li a:hover::after{
 /* ------------- CONTACT --------------- */
 
 #contact{
-    padding-top: 20%;
+    padding-top: 14%;
     padding-bottom: 3%;
     padding-left: 4%;
     padding-right: 4%;
@@ -838,29 +832,29 @@ nav ul li a:hover::after{
 }
 
 .contact-left p{
-    margin-top: 1.875vw;
+    margin-top: 1.875rem;
 }
 
 .contact-left p{
     color: #fff;
-    margin-right: .94vw;
+    margin-right: .94rem;
     font-size: 1.7rem;
 }
 .social-icons{
-    margin-top: 1.875vw;
+    margin-top: 1.875rem;
 }
 
 .social-icons a{
     text-decoration: none;
     font-size: 2.4rem;
-    margin-right: .94vw;
+    margin-right: .94rem;
     color: #fff;
     display: inline-block;
     transition: transform 0.5s, font-size 0.5s;
 }
 
 .social-icons a:hover{
-    transform: translateY(-.31vw);
+    transform: translateY(-.31rem);
     font-size: 2.8rem;
 }
 
@@ -883,27 +877,27 @@ form input, form textarea{
     border: 0;
     outline: none;
     background: #262626;
-    padding: .94vw;
-    margin: .94vw 0;
+    padding: .94rem;
+    margin: .94rem 0;
     color: #fff;
     font-size: 1.125rem;
-    border-radius: .375vw;
+    border-radius: .375rem;
 }
 
 form .btn2{
-    padding: .875vw 3.75vw;
+    padding: .875rem 3.75rem;
     font-size: 1.125rem;
-    margin-top: 1.25vw;
+    margin-top: 1.25rem;
     cursor: pointer;
 }
 
 .copyright{
     width: 100%;
     text-align: center;
-    padding: 1.56vw 0;
+    padding: 1.56rem 0;
     background: #262626;
     font-weight: 300;
-    margin-top: 1.25vw;
+    margin-top: 1.25rem;
 }
 
 nav .fa-solid{
@@ -912,7 +906,7 @@ nav .fa-solid{
 
 #msg{
     color: #ffffff;
-    margin-top: -2.5vw;
+    margin-top: -2.5rem;
     display: block;
     font-size: 1.5rem;
     font-weight: 400;
@@ -920,7 +914,7 @@ nav .fa-solid{
 
 .copyright a{
     position: absolute;
-    right: 1vw;
+    right: 1rem;
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
