@@ -25,7 +25,7 @@ c:hover{
     font-weight: bold;
 }
 d{
-    font-size: 3px;
+    font-size: .1875rem;
 }
 /* ---------- HEADER ---------- */
 
@@ -109,61 +109,61 @@ nav ul li a:hover::after{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: .5vw;
-    left: 27vw;
-    filter: drop-shadow(0 0 1vw rgb(0, 0, 0));
+    top: .5rem;
+    left: 27rem;
+    filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
     z-index: 4;
 
 }
 
 #introduction .icons img{
-    width: 3.2vw;
+    width: 3.2rem;
     max-width: 6rem;
-    margin-bottom: 1vw;
+    margin-bottom: 1rem;
     transition: .5s;
 
 }
 
 #introduction .icons img:hover{
-    width: 3.8vw;
+    width: 3.8rem;
     max-width: 6rem;
-    margin-bottom: 1vw;
+    margin-bottom: 1rem;
     transition: .5s;
 
 }
 
 #linkedin{
     position: relative;
-    left: -3.4vw;
+    left: -3.45rem;
 }
 
 #github{
     position: relative;
-    left: -.45vw;
+    left: -.45rem;
 }
 
 #twitter{
     position: relative;
-    top: .8vw;
-    left: .8vw;
+    top: .8rem;
+    left: .75rem;
 }
 
 #instagram{
     position: relative;
-    top: 1.5vw;
-    left: .4vw;
+    top: 1.5rem;
+    left: .4rem;
 }
 
 #introduction .imageContainer{
     position: relative;
-    width: 26.125vw;
+    width: 26.125rem;
     height: 100%;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
 }
 
 #introduction .front{
-    width: 26.125vw;
+    width: 26.125rem;
     max-width: 50rem;
     height: 26.125vw;
     border-radius: 50%;
@@ -174,8 +174,8 @@ nav ul li a:hover::after{
 }
 
 #introduction .back{
-    width: 26.125vw;
-    height: 26.125vw;
+    width: 26.125rem;
+    height: 26.125rem;
     border-radius: 50%;
     backface-visibility: hidden;
     background: #6a00ff9b;
@@ -187,8 +187,8 @@ nav ul li a:hover::after{
 
 #introduction .back p{
     position: relative;
-    top: 3vw;
-    padding: 3.5vw;
+    top: 3rem;
+    padding: 3.5rem;
     font-size: 1.3rem;
     font-weight: 400;
 }
@@ -203,7 +203,7 @@ nav ul li a:hover::after{
 }
 
 .headshot{
-    width: 26.125vw;
+    width: 26.125rem;
     max-width: 50rem;
     border-radius: 50%;
     background-image: url(../../assets/img/headshot.png);
@@ -259,7 +259,7 @@ nav ul li a:hover::after{
     padding-left: 4%;
     padding-right: 4%;
     color: #ffffff;
-    text-shadow: #000000 0rem 0rem .625vw;
+    text-shadow: #000000 0rem 0rem .625rem;
 }
 
 .row{
@@ -276,7 +276,7 @@ nav ul li a:hover::after{
     flex-basis: 45%;
     
     text-align: left;
-    padding-right: 1.6vw;
+    padding-right: 1.6rem;
     font-size: 1.25rem;
 }
 
@@ -286,8 +286,8 @@ nav ul li a:hover::after{
 }
 
 .about-col-2{
-    flex-basis: 27.5%;
-    padding-top: 5.25vw;
+    flex-basis: 28.5%;
+    padding-top: 5.25rem;
     position: relative;
 }
 
@@ -295,7 +295,7 @@ nav ul li a:hover::after{
 
 #about .imageContainer{
     position: absolute;
-    width: 100%;
+    width: 25rem;
     height: 100%;
     transform-style: preserve-3d;
     transition: all 0.5s ease;
@@ -303,8 +303,8 @@ nav ul li a:hover::after{
 
 #about .front{
     position: absolute;
-    width: 100%;
-    height: 33.2vw;
+    width: auto;
+    height: 33.2rem;
     backface-visibility: hidden;
     background: #6a00ff;
     color: #fff;
@@ -313,8 +313,8 @@ nav ul li a:hover::after{
 
 #about .back{
     position: absolute;
-    width: 100%;
-    height: 33.2vw;
+    width: auto;
+    height: 33.2rem;
     backface-visibility: hidden;
     background: #6a00ff9b;
     border-radius: 3.125vw;
@@ -471,15 +471,15 @@ nav ul li a:hover::after{
 
 #research h1{
     position: relative;
-    left: -16.65vw;
+    left: -14.5vw;
 }
 
 .research-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(18.75vw, 1fr));
-    grid-gap: 2.5vw;
-    margin-top: 1.25vw;
-    margin-right: 27.25vw;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    grid-gap: 2.5rem;
+    margin-top: 1.25rem;
+    margin-right: 23vw;
 }
 
 .research-header{
@@ -537,7 +537,7 @@ nav ul li a:hover::after{
 }
 
 .research-images iframe{
-    border-radius: 3rem;
+    border-radius: 2rem;
     outline: .25rem solid #ffffff;
     outline-offset: .45rem;
     filter: drop-shadow(0 0 1vw rgb(0, 0, 0));
@@ -552,28 +552,28 @@ nav ul li a:hover::after{
 .rpic1{
     margin-left: 1vw;
     position: relative;
-    left: 6rem;
+    left: 6vw;
     z-index: 2;
     transition: transform .25s;
 }
 
 .rpic1 img{
     width: 18rem;
-    border-radius: 3rem;
+    border-radius: 2rem;
     outline: .25rem solid #ffffff;
     outline-offset: .45rem;
-    filter: drop-shadow(0 0 1vw rgb(0, 0, 0));
+    filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
 }
 
 .research-pictures .rpic1:hover{
     z-index: 4;
-    transform: translateY(-.2vw);
+    transform: translateY(-.2rem);
     transition: .25s;
 }
 
 .research-pictures .rpic2:hover{
     z-index: 4;
-    transform: translateY(-.2vw);
+    transform: translateY(-.2rem);
     transition: .25s;
 }
 
@@ -581,13 +581,13 @@ nav ul li a:hover::after{
     z-index: 1;
     position: relative;
     top: -15rem;
-    left: -4rem;
+    left: -4vw;
     transition: transform .25s;
 }
 
 .rpic2 img{
     width: 12rem;
-    border-radius: 3rem;
+    border-radius: 2rem;
     outline: .25rem solid #ffffff;
     outline-offset: .45rem;
     filter: drop-shadow(0 0 1vw rgb(0, 0, 0));
@@ -623,9 +623,20 @@ nav ul li a:hover::after{
 #s1:checked ~ .project-list #slide2,
 #s2:checked ~ .project-list #slide3,
 #s3:checked ~ .project-list #slide1{
-    /* transform: translate3d(40%, 0, -5rem); */
     transform: translate(36%, 0) scale(.91);
-    z-index: 1;
+}
+
+#s1:checked ~ .project-list #slide3,
+#s2:checked ~ .project-list #slide1,
+#s3:checked ~ .project-list #slide2{
+    transform: translate(-36%, 0) scale(.91);
+}
+
+#s1:checked ~ .project-list #slide1,
+#s2:checked ~ .project-list #slide2,
+#s3:checked ~ .project-list #slide3{
+    transform: translate(0%, 0) scale(1);
+    z-index: 20;
 }
 
 #s1:checked ~ .project-list #slide2 .cover,
@@ -634,25 +645,10 @@ nav ul li a:hover::after{
     opacity: .3;
 }
 
-#s1:checked ~ .project-list #slide3,
-#s2:checked ~ .project-list #slide1,
-#s3:checked ~ .project-list #slide2{
-    /* transform: translate3d(-40%, 0, -5rem); */
-    transform: translate(-36%, 0) scale(.91);
-    z-index: 1;
-}
-
 #s1:checked ~ .project-list #slide3 .cover,
 #s2:checked ~ .project-list #slide1 .cover,
 #s3:checked ~ .project-list #slide2 .cover{
     opacity: .3;
-}
-
-#s1:checked ~ .project-list #slide1,
-#s2:checked ~ .project-list #slide2,
-#s3:checked ~ .project-list #slide3{
-    transform: translate3d(0%, 0, 0);
-    z-index: 100;
 }
 
 #s1:checked ~ .project-list #slide1 .cover,
@@ -674,8 +670,8 @@ nav ul li a:hover::after{
 
 .project-list{
     position: relative;
-    height: 40vw;
-    width: 30vw;
+    height: 40rem;
+    width: 33rem;
     margin-top: 2rem;
     perspective: 50rem;
     transform-style: preserve-3d;
@@ -691,21 +687,20 @@ nav ul li a:hover::after{
     margin: auto;
     cursor: pointer;
     transition: transform .5s ease;
-    
-    pointer-events: auto;
     filter: drop-shadow(0 0 2rem rgb(0, 0, 0));
 }
 
 .project{
-    border-radius: 2.5vw;
+    border-radius: 2.8rem;
     position: relative;
     overflow: hidden;
     background-color: #000000;
-    height: 40vw;
-    outline: .1125vw solid #ffffff;
+    height: 44rem;
+    outline: .12rem solid #ffffff;
+    z-index: 40;
 }
 
-
+/* NOT CURRENTLY USING IMGS */
 .project img{
     width: 100%;
     border-radius: 1.875vw;
@@ -721,7 +716,6 @@ nav ul li a:hover::after{
     width: 100%;
     height: 100%;
     background-color: #000000;
-    z-index: 4;
     transition: opacity .25s;
 }
 
@@ -952,8 +946,8 @@ nav .fa-solid{
     }
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1800px) {
     .introduction-text{
-        margin-top: 2vw;
+        margin-top: 1vw;
     }
   }
