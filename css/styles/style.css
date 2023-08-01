@@ -1087,8 +1087,6 @@ nav .fa-solid{
         border-radius: 50%;
         backface-visibility: hidden;
         background: #6a00ff9b;
-        outline: .3125rem solid #ffffff;
-        outline-offset: .45rem;
         color: rgb(255, 255, 255);
         transform: rotateY(180deg), translateZ(0);
     }
@@ -1558,7 +1556,7 @@ nav .fa-solid{
     .project-list{
         position: relative;
         height: 20rem;
-        width: 14rem;
+        width: 13.5rem;
         margin-top: 1rem;
         perspective: 50rem;
         transform-style: preserve-3d;
