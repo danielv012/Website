@@ -623,8 +623,9 @@ nav ul li a:hover::after{
 #s1:checked ~ .project-list #slide2,
 #s2:checked ~ .project-list #slide3,
 #s3:checked ~ .project-list #slide1{
-    filter: drop-shadow(0 0 3rem rgb(0, 0, 0));
-    transform: translate3d(40%, 0, -5rem);
+    /* transform: translate3d(40%, 0, -5rem); */
+    transform: translate(36%, 0) scale(.91);
+    z-index: 1;
 }
 
 #s1:checked ~ .project-list #slide2 .cover,
@@ -636,8 +637,9 @@ nav ul li a:hover::after{
 #s1:checked ~ .project-list #slide3,
 #s2:checked ~ .project-list #slide1,
 #s3:checked ~ .project-list #slide2{
-    filter: drop-shadow(0 0 3rem rgb(0, 0, 0));
-    transform: translate3d(-40%, 0, -5rem);
+    /* transform: translate3d(-40%, 0, -5rem); */
+    transform: translate(-36%, 0) scale(.91);
+    z-index: 1;
 }
 
 #s1:checked ~ .project-list #slide3 .cover,
@@ -649,8 +651,8 @@ nav ul li a:hover::after{
 #s1:checked ~ .project-list #slide1,
 #s2:checked ~ .project-list #slide2,
 #s3:checked ~ .project-list #slide3{
-    filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
     transform: translate3d(0%, 0, 0);
+    z-index: 100;
 }
 
 #s1:checked ~ .project-list #slide1 .cover,
@@ -674,10 +676,11 @@ nav ul li a:hover::after{
     position: relative;
     height: 40vw;
     width: 30vw;
-    margin-top: 1rem;
+    margin-top: 2rem;
     perspective: 50rem;
     transform-style: preserve-3d;
     display: flex;
+    
 }
 
 .project-list label{
@@ -688,6 +691,9 @@ nav ul li a:hover::after{
     margin: auto;
     cursor: pointer;
     transition: transform .5s ease;
+    
+    pointer-events: auto;
+    filter: drop-shadow(0 0 2rem rgb(0, 0, 0));
 }
 
 .project{
@@ -707,10 +713,7 @@ nav ul li a:hover::after{
     transition: transform .5s, opacity .5s;
 }
 
-.project video{
-    controls: none;
-    pointer-events: none;
-}
+
 
 
 .cover{
