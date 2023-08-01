@@ -1596,7 +1596,9 @@ nav .fa-solid{
         transition: transform .5s, opacity .5s;
     }
 
-    .project.active poster{
+    .project video{
+        display: block;
+        width: 100%;
         border-radius: 2.8rem;
     }
 
