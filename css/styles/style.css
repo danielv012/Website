@@ -614,7 +614,7 @@ nav ul li a:hover::after{
 }
 
 #projects a{
-    z-index: 4;
+    z-index: 200;
 }
 
 #projects input{
@@ -1033,7 +1033,7 @@ nav .fa-solid{
     #introduction .icons img:hover{
         width: 3.2rem;
         max-width: 6rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
         transition: .5s;
     }
 
@@ -1501,7 +1501,7 @@ nav .fa-solid{
     }
 
     #projects a{
-        z-index: 4;
+        z-index: 200;
     }
 
     #projects input{
