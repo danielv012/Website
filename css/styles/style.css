@@ -1406,7 +1406,7 @@ nav .fa-solid{
 
     .research-header i{
         font-size: 2rem;
-        padding-bottom: 1.875vw;
+        padding-bottom: 1.875rem;
     }
 
     .research-header h2{
@@ -1465,7 +1465,7 @@ nav .fa-solid{
 
     .rpic1 img{
         width: 13rem;
-        border-radius: 2rem;
+        border-radius: 1rem;
         outline: 0rem solid #ffffff;
         outline-offset: 0rem;
         border: #ffffff .4rem solid;
@@ -1493,7 +1493,7 @@ nav .fa-solid{
 
     .rpic2 img{
         width: 9rem;
-        border-radius: 2rem;
+        border-radius: 1rem;
         outline: 0rem solid #ffffff;
         outline-offset: 0rem;
         border: #ffffff .4rem solid;
