@@ -188,7 +188,8 @@ nav ul li a:hover::after{
 
 #introduction .back p{
     position: relative;
-    top: 3rem;
+    top: 1.4rem;
+    left: 1rem;
     padding: 3.5rem;
     font-size: 1.3rem;
     font-weight: 400;
