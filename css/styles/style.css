@@ -558,6 +558,7 @@ nav ul li a:hover::after{
 
 .rpic1{
     margin-left: 1vw;
+    margin-right: 1vw;
     position: relative;
     left: 2vw;
     z-index: 2;
