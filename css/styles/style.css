@@ -422,6 +422,7 @@ nav ul li a:hover::after{
 #about .icons{
     display: flex;
     flex-direction: column;
+    margin-top: .5rem;
 }
 
 #about .icons ul{
