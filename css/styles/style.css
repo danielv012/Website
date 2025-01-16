@@ -1183,7 +1183,7 @@ nav .fa-solid{
         color: #000000;
     }
 
-    .row{
+    #about .row{
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
