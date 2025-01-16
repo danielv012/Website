@@ -1175,7 +1175,7 @@ nav .fa-solid{
         padding-left: 1%;
         padding-right: 1%;
         color: #ffffff;
-        text-shadow: #0000005c 0 0 1.225rem
+        text-shadow: #0000004d 0 0 .525rem
     }
 
     #about-container
@@ -1362,7 +1362,7 @@ nav .fa-solid{
         display: flex;
         flex-direction: column;
         position: absolute;
-        left: 0;
+        left: 1rem;
     }
 
     #about .icons ul{
@@ -1409,7 +1409,7 @@ nav .fa-solid{
     .tab-contents{
         display: none;
         position: relative;
-        left: 1.5rem;
+        left: 2.5rem;
     }
 
     .tab-contents.active-tab{
