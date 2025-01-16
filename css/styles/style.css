@@ -1183,6 +1183,12 @@ nav .fa-solid{
         color: #000000;
     }
 
+    #about .row{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
     .row{
         display: flex;
         justify-content: flex-start;
