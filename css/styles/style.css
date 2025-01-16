@@ -285,10 +285,10 @@ nav ul li a:hover::after{
     justify-content: flex-start;
     flex-wrap: wrap;
     position: absolute;
-    left: 20rem;
+    left: 20vw;
     height: auto;
     justify-content: center;
-    width: 60rem;
+    width: clamp(40rem, 60rem, 70vw);
 }
 
 .row p{
