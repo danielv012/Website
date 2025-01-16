@@ -259,11 +259,17 @@ nav ul li a:hover::after{
 /* ------------- ABOUT --------------- */
 
 #about{
-    padding-top: 22%;
+    padding-top: 30vw;
     padding-left: 4%;
     padding-right: 4%;
     color: #ffffff;
     text-shadow: #000000 0rem 0rem .625rem;
+}
+
+#about-container
+{
+    position: relative;
+    height: 50rem;
 }
 
 #about a{
@@ -271,10 +277,18 @@ nav ul li a:hover::after{
     color: #ffffff;
 }
 
-.row{
+#about .row{
+    border-radius: 2.5rem;
+    padding: 1rem;
+    background: #6a00ff2d;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    position: absolute;
+    left: 20rem;
+    height: auto;
+    justify-content: center;
+    width: 60rem;
 }
 
 .row p{
@@ -282,10 +296,10 @@ nav ul li a:hover::after{
 }
 
 .about-col-1{
-    flex-basis: 45%;
+    flex-basis: 0%;
     
     text-align: left;
-    padding-right: 1.6rem;
+    padding-right: 0rem;
     font-size: 1.25rem;
 }
 
@@ -309,6 +323,7 @@ nav ul li a:hover::after{
 
 #about .imageContainer{
     position: absolute;
+    left: 5rem;
     width: 25rem;
     height: 100%;
     transform-style: preserve-3d;
@@ -481,10 +496,11 @@ nav ul li a:hover::after{
 
 #research{
     /* padding-top: 480px; */
-    padding-top: 6%;
+    padding-top: 30vw;
     padding-left: 4%;
     padding-right: 4%;
     color: #ffffff;
+    position: relative;
 }
 
 #research h1{
@@ -608,10 +624,11 @@ nav ul li a:hover::after{
 
 #projects{
     /* padding-top: 480px; */
-    padding-top: 5%;
+    padding-top: 30vw;
     padding-left: 4%;
     padding-right: 4%;
     color: #ffffff;
+    position: relative;
 }
 
 #projects h1{
