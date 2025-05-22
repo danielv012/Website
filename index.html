@@ -1,306 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hey, I'm Daniel Vayman, and I'm an aspiring software engineer. This is my personal website that contains information about me and what I do. Feel free to come visit!">
-    <link rel="icon" sizes="16x16" type="image/ico" href="assets/img/icon/icon-dark-16.ico" media="(prefers-color-scheme: dark)"/>
-    <link rel="icon" sizes="32x32" type="image/ico" href="assets/img/icon/icon-dark-32.ico" media="(prefers-color-scheme: dark)"/>
-    <link rel="icon" sizes="64x64" type="image/ico" href="assets/img/icon/icon-dark-64.ico" media="(prefers-color-scheme: dark)"/>
-    <link rel="icon" sizes="16x16" type="image/ico" href="assets/img/icon/icon-light-16.ico" media="(prefers-color-scheme: light)"/>
-    <link rel="icon" sizes="32x32" type="image/ico" href="assets/img/icon/icon-light-32.ico" media="(prefers-color-scheme: light)"/>
-    <link rel="icon" sizes="64x64" type="image/ico" href="assets/img/icon/icon-light-64.ico" media="(prefers-color-scheme: light)"/>
-    <link rel="stylesheet" href="css/styles/style.css">
-    <title>Daniel Vayman</title>
-    <script src="https://kit.fontawesome.com/1f30f45a4f.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <ul id="sidemenu">
-            <li><a href="#about-anchor">About</a></li>
-            <li><a href="#research-anchor">Research</a></li>
-            <li><a href="#projects-anchor">Projects</a></li>
-            <li><a href="https://danielv012.github.io/Blog/" target="_blank">Blog</a></li>
-            <li><a href="#contact-anchor">Contact</a></li>
-            <i class="fa-solid fa-xmark" style="color: #ffffff;" onclick="closeMenu()"></i>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Hey, I'm Daniel Vayman, and I'm an aspiring software engineer. This is my personal website that contains information about me and what I do. Feel free to come visit!">
+  <link rel="icon" sizes="16x16" type="image/ico" href="assets/img/icon/icon-dark-16.ico"
+    media="(prefers-color-scheme: dark)" />
+  <link rel="icon" sizes="32x32" type="image/ico" href="assets/img/icon/icon-dark-32.ico"
+    media="(prefers-color-scheme: dark)" />
+  <link rel="icon" sizes="64x64" type="image/ico" href="assets/img/icon/icon-dark-64.ico"
+    media="(prefers-color-scheme: dark)" />
+  <link rel="icon" sizes="16x16" type="image/ico" href="assets/img/icon/icon-light-16.ico"
+    media="(prefers-color-scheme: light)" />
+  <link rel="icon" sizes="32x32" type="image/ico" href="assets/img/icon/icon-light-32.ico"
+    media="(prefers-color-scheme: light)" />
+  <link rel="icon" sizes="64x64" type="image/ico" href="assets/img/icon/icon-light-64.ico"
+    media="(prefers-color-scheme: light)" />
+  <link rel="stylesheet" href="css/styles/style.css">
+  <title>Daniel Vayman</title>
+  <script src="https://kit.fontawesome.com/1f30f45a4f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <ul id="sidemenu">
+          <li><a href="#about-anchor">About</a></li>
+          <li><a href="#research-anchor">Research</a></li>
+          <li><a href="#projects-anchor">Projects</a></li>
+          <li><a href="https://danielv012.github.io/Blog/" target="_blank">Blog</a></li>
+          <li><a href="#contact-anchor">Contact</a></li>
+          <i class="fa-solid fa-xmark" style="color: #ffffff;" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="openMenu()"></i>
+      </nav>
+    </div>
+  </div>
+  <div id="introduction">
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/daniel-vayman/" target="_blank"><img id="linkedin"
+          src="assets/img/linkedin.png" alt="" srcset=""></a>
+      <a href="https://github.com/danielv012" target="_blank"><img id="github" src="assets/img/github.png" alt=""
+          srcset=""></a>
+      <a href="https://twitter.com/DanielVayman" target="_blank"><img id="twitter" src="assets/img/twitter.png" alt=""
+          srcset=""></a>
+      <a href="https://www.instagram.com/daniel.vayman/" target="_blank"><img id="instagram"
+          src="assets/img/instagram.png" alt="" srcset=""></a>
+    </div>
+
+    <div class="imageContainer">
+      <div class="front">
+        <img class="headshot" src="assets/img/headshot.png" alt="headshot">
+      </div>
+      <div class="back">
+        <p><em>Taken on August 4th, 2022, around 11:30am, by my dear friend Ryan.</em>
+          <br><br> We were in the midst of a 5 day long cross-country road-trip, and we had just arrived at White Sands
+          National Park in Alamogordo, New Mexico.
+        </p>
+      </div>
+    </div>
+
+    <div class="introduction-text">
+      <h2 id="preface">i'm</h2>
+      <h2 id="name">Daniel Vayman.</h2>
+      <p> a software engineer and roboticist</p>
+    </div>
+  </div>
+  <!-- --------- ABOUT SECTION ------------ -->
+
+  <div id="about">
+    <div id="about-anchor" style="position: relative; top: -155px"></div>
+    <div class="container" id="about-container">
+      <div class="row">
+        <div class="icons">
+          <ul>
+            <li><img src="assets/img/spacex.png" alt="SpaceX Logo"></li>
+            <li><img src="assets/img/cisco.png" alt="Cisco Logo"></li>
+            <li><img src="assets/img/Nova Icon.png" alt="Nova Logo"></li>
+            <li><img src="assets/img/FIRST-Icon.png" alt="FIRST Logo"></li>
           </ul>
-          <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="openMenu()"></i>
-        </nav>
-      </div>
-    </div>
-    <div id="introduction">
-      <div class="icons">
-        <a href="https://www.linkedin.com/in/daniel-vayman/" target="_blank"><img id="linkedin" src="assets/img/linkedin.png" alt="" srcset=""></a>
-        <a href="https://github.com/danielv012" target="_blank"><img id="github" src="assets/img/github.png" alt="" srcset=""></a>
-        <a href="https://twitter.com/DanielVayman" target="_blank"><img id="twitter" src="assets/img/twitter.png" alt="" srcset=""></a>
-        <a href="https://www.instagram.com/daniel.vayman/" target="_blank"><img id="instagram" src="assets/img/instagram.png" alt="" srcset=""></a>
-      </div>
-
-      <div class="imageContainer">
-        <div class="front">
-          <img class="headshot" src="assets/img/headshot.png" alt="headshot">
         </div>
-        <div class="back">
-          <p><em>Taken on August 4th, 2022, around 11:30am, by my dear friend Ryan.</em>
-          <br><br> We were in the midst of a 5 day long cross-country road-trip, and we had just arrived at White Sands National Park in Alamogordo, New Mexico.
+        <div class="about-col-1">
+          <h1 class="sub-title">About Me</h1>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp; I was born and raised
+            in St. Louis, MO, and I just graduated from The University
+            of Texas at Dallas with a BS in Computer Science.
+            I'm a dreamer, a leader, and a learner. I have a fiery passion for creating and innovating,
+            and I'm always on the lookout for opportunities to make a
+            positive impact on both the people
+            and the planet. <br></br> Alright, that's enough corniness.
+            Feel free to click through the tabs below or <c><a href="#contact-anchor">contact me</a></c> to learn more!
+            Thanks for stopping by.
           </p>
-        </div>
-      </div>
 
-      <div class="introduction-text">
-        <h2 id="preface">i'm</h2>
-        <h2 id="name">Daniel Vayman.</h2>
-        <p> a software engineer and roboticist</p>
-      </div>
-    </div>
-    <!-- --------- ABOUT SECTION ------------ -->
-    
-    <div id="about">
-      <div id="about-anchor" style="position: relative; top: -155px"></div>
-      <div class="container" id="about-container">
-        <div class="row">
-          <div class="icons">
+          <div class="tab-titles">
+            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('hobbies')">Interests</p>
+          </div>
+          <div class="tab-contents" id="skills">
             <ul>
-              <li><img src="assets/img/spacex.png" alt="SpaceX Logo"></li>
-              <li><img src="assets/img/cisco.png" alt="Cisco Logo"></li>
-              <li><img src="assets/img/Nova Icon.png" alt="Nova Logo"></li>
-              <li><img src="assets/img/FIRST-Icon.png" alt="FIRST Logo"></li>
+              <li><span>Programming</span>
+                <p>Experienced backend developer in control and autonomous systems, with a side of machine learning &
+                  networking.
+                  <br><i>
+                    <f>C/++/#, Java, Python, Bash/Shell, HTML, CSS, JS, MIPS</f>
+                  </i>
+                </p>
+              </li>
+              <li><span>Leadership</span>
+                <p>Seasoned leader with a successful track record of managing and motivating teams & individuals to
+                  achieve project goals.</p>
+              </li>
+              <li><span>Collaboration</span>
+                <p>Proven collaborator with 6+ years of experience working and communicating effectively with others in
+                  small to large groups.</p>
+              </li>
             </ul>
           </div>
-          <div class="about-col-1">
-            <h1 class="sub-title">About Me</h1>
-            <p>&nbsp;&nbsp;&nbsp;&nbsp; I was born and raised
-              in St. Louis, MO, and I'm currently a Senior studying
-              Computer Science at The University of Texas at Dallas.
-              I'm a dreamer, a leader, and a learner. I have a fiery passion for creating and innovating, 
-              and I'm always on the lookout for opportunities to make a 
-              positive impact on both the people
-              and the planet. <br></br>  Alright, that's enough corniness.
-              Feel free to click through the tabs below or <c><a href="#contact-anchor">contact me</a></c> to learn more! 
-              Thanks for stopping by.
-            </p>
-
-            <div class="tab-titles">
-              <p class="tab-links" onclick="opentab('skills')">Skills</p>
-              <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-              <p class="tab-links" onclick="opentab('hobbies')">Interests</p>
-            </div>
-            <div class="tab-contents" id="skills">
-              <ul>
-                <li><span>Programming</span><p>Experienced backend developer in control and autonomous systems, with a side of machine learning & networking.
-                  <br><i><f>C/++/#, Java, Python, Bash/Shell, HTML, CSS, JS, MIPS</f></i></p></li>
-                <li><span>Leadership</span><p>Seasoned leader with a successful track record of managing and motivating teams & individuals to achieve project goals.</p></li>
-                <li><span>Collaboration</span><p>Proven collaborator with 6+ years of experience working and communicating effectively with others in small to large groups.</p></li>
-              </ul>
-            </div>
-            <div class="tab-contents active-tab" id="experience">
-              <ul>
-                <li><span>Software Engineering Intern</span><p>SpaceX <br><i><f>May 2024 - August 2024</f></i></p></li>
-                <li><span>Software Engineering Intern</span><p>Cisco <br><i><f>May 2023 - August 2023</f></i></p></li>
-                <li><span>Project Lead</span><p>Nova at UT Dallas <br><i><f>Sept. 2022 - Current</f></i></p></li>
-                <li><span>Co-Captain, Programming Lead, Design Lead</span><p>FIRST Robotics, FRC Team  <br><i><f>Aug. 2019 - May 2022</f></i></p></li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li><span>The University of Texas at Dallas</span>
-                  <p>B.S., <i>Computer Science</i>
-                  <br><i><f>2022 - 2025</f></i></p>
-                </li>
-                <li><span>Marquette Senior High School</span>
-                  <p>Go Mustangs!
-                  <br><i><f>2018 - 2022</f></i></p>
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="hobbies">
-              <ul>
-                <li><span>Sports & Exercise</span><p>You'll find me at the climbing gym, running, playing Ultimate Frisbee, or strength training. 💪</p></li>
-                <li><span>Hobbies</span> 
-                <p>I love to cook, read, watch <c><a href="https://letterboxd.com/vayman/" target="_blank" >TV/Movies</a></c>, 
-                  play video games, and hang out with friends (not all at the same time).</p></li>
-              </ul>
-            </div>
+          <div class="tab-contents active-tab" id="experience">
+            <ul>
+              <li><span>Software Engineering Intern</span>
+                <p>SpaceX <br><i>
+                    <f>May 2024 - August 2024</f>
+                  </i></p>
+              </li>
+              <li><span>Software Engineering Intern</span>
+                <p>Cisco <br><i>
+                    <f>May 2023 - August 2023</f>
+                  </i></p>
+              </li>
+              <li><span>Project Lead</span>
+                <p>Nova at UT Dallas <br><i>
+                    <f>Sept. 2022 - Current</f>
+                  </i></p>
+              </li>
+              <li><span>Co-Captain, Programming Lead, Design Lead</span>
+                <p>FIRST Robotics, FRC Team <br><i>
+                    <f>Aug. 2019 - May 2022</f>
+                  </i></p>
+              </li>
+            </ul>
           </div>
-          <div class="about-col-2">
-            <div class="imageContainer">
-              <div class="front">
-                <img id="flipImage2" src="assets/img/eating.PNG" alt="pic of me eating">
-              </div>
-              <div class="back">
-                <p><em>Taken on March 13th, 2023, at 3:12pm, by my close friend Andrew.</em>
-                <br><br> We were on a Spring Break trip in Chicago. It was a cold, windy day, so we stopped by Gyuro Ramen to warm up.
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>The University of Texas at Dallas</span>
+                <p>B.S., <i>Computer Science</i>
+                  <br><i>
+                    <f>2022 - 2025</f>
+                  </i>
                 </p>
-              </div>
-            </div>
+              </li>
+              <li><span>Marquette Senior High School</span>
+                <p>Go Mustangs!
+                  <br><i>
+                    <f>2018 - 2022</f>
+                  </i>
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="hobbies">
+            <ul>
+              <li><span>Sports & Exercise</span>
+                <p>You'll find me at the climbing gym, running, playing Ultimate Frisbee, or strength training. 💪</p>
+              </li>
+              <li><span>Hobbies</span>
+                <p>I love to cook, read, watch <c><a href="https://letterboxd.com/vayman/" target="_blank">TV/Movies</a>
+                  </c>,
+                  play video games, and hang out with friends (not all at the same time).</p>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>    
-    </div>
-
-    <!-- --------- RESEARCH SECTION ------------ -->
-
-    <div id="research">
-      <div id="research-anchor" style="position: relative; top: -30px"></div>
-      <div class="container">
-        <h1 class="sub-title">Research</h1>
-        <div class="research-list">
-          <div class="research-header">
-            <i class="fa-solid fa-car-side fa-bounce fa-2xl" style="color: #ffffff;"></i>
-            <h2>Autonomous Driving</h2>
-            <p>I was project leader of <b>Nova</b>, which is UT Dallas's premier autonomous driving research group.
-              Nova consists of undergraduate students from a variety of academic backgrounds, working in
-              tandem under the Applied Systems lab of <c><a href="https://me.utdallas.edu/people/justin-ruths/" target="_blank">Assoc. Prof. Justin Ruths</a></c>. 
-              Our goal is to develop and deploy the first end-to-end, modular, open-source autonomous driving stack 
-              for use by researchers, hobbyists, and/or educational institutions. We also aim to provide autonomous 
-              shuttle services to the UT Dallas community.
-              <br><br>For more information on <em>Navigator</em>, our software stack, 
-              check out the <c><a href="#projects-anchor">projects</a></c> section.
-              <br></br> For more information on <em>Nova</em>, our team members, or our progress, click the link below!
-              <br><br>
-            </p>
-            <c><a href="https://nova-utd.github.io/" target="_blank" style="font-size: larger"><u>Learn more</u></a></c>
-            <div class="research-images">
-              <iframe width="350" height="197" src="https://www.youtube.com/embed/uHjxz3qC8Q8?start=38" title="YouTube video player" 
-              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              <div class="research-pictures">
-                <div class="rpic1" >
-                  <img src="assets/img/nova_parade.jpg" alt="Nova at the Richardson Parade">
-                </div>
-                <div class="rpic2">
-                  <img src="assets/img/nova_car.jpg" alt="Nova Car">
-                </div>
-              </div>
+        <div class="about-col-2">
+          <div class="imageContainer">
+            <div class="front">
+              <img id="flipImage2" src="assets/img/eating.PNG" alt="pic of me eating">
             </div>
-          </div>    
+            <div class="back">
+              <p><em>Taken on March 13th, 2023, at 3:12pm, by my close friend Andrew.</em>
+                <br><br> We were on a Spring Break trip in Chicago. It was a cold, windy day, so we stopped by Gyuro
+                Ramen to warm up.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- --------- PROJECTS SECTION ------------ -->
+  <!-- --------- RESEARCH SECTION ------------ -->
 
-    <div id="projects">
-      <div id="projects-anchor" style="position: relative; top: -30px"></div>
-      <div class="container">
-        <h1 class="sub-title">Projects</h1>
-        <input type="radio" name="slider" id="s1">
-        <input type="radio" name="slider" id="s2" checked>
-        <input type="radio" name="slider" id="s3">
-        <div class="project-list">
-          <label for="s1" id="slide1" onclick="">
-            <div class="project">
-              <div class="cover"></div>
-              <video class="active" id="project1-video" src="assets/img/website-project.mp4" height="100%" muted loop playsinline poster="assets/img/website-project-1.png"></video>
-              <div class="layer">
-                <h3>This Website</h3>
-                <h4><em>Web Development</em></h4>
-                <p>It took me way too long to design that background.
-                </p>
-                <a href="https://vayman.co" target="_blank">
-                  <i class="fa-solid fa-arrow-up-right-from-square fa-2xl"></i>
-                </a>
-                <div class="frameworks">
-                  <img src="assets/img/html.png" alt="HTML">
-                  <img src="assets/img/css.png" alt="CSS">
-                  <img src="assets/img/nodejs.png" alt="Node JS">
-                </div>
+  <div id="research">
+    <div id="research-anchor" style="position: relative; top: -30px"></div>
+    <div class="container">
+      <h1 class="sub-title">Research</h1>
+      <div class="research-list">
+        <div class="research-header">
+          <i class="fa-solid fa-car-side fa-bounce fa-2xl" style="color: #ffffff;"></i>
+          <h2>Autonomous Driving</h2>
+          <p>I was project leader of <b>Nova</b>, which is UT Dallas's premier autonomous driving research group.
+            Nova consists of undergraduate students from a variety of academic backgrounds, working in
+            tandem under the Applied Systems lab of <c><a href="https://me.utdallas.edu/people/justin-ruths/"
+                target="_blank">Assoc. Prof. Justin Ruths</a></c>.
+            Our goal is to develop and deploy the first end-to-end, modular, open-source autonomous driving stack
+            for use by researchers, hobbyists, and/or educational institutions. We also aim to provide autonomous
+            shuttle services to the UT Dallas community.
+            <br><br>For more information on <em>Navigator</em>, our software stack,
+            check out the <c><a href="#projects-anchor">projects</a></c> section.
+            <br></br> For more information on <em>Nova</em>, our team members, or our progress, click the link below!
+            <br><br>
+          </p>
+          <c><a href="https://nova-utd.github.io/" target="_blank" style="font-size: larger"><u>Learn more</u></a></c>
+          <div class="research-images">
+            <iframe width="350" height="197" src="https://www.youtube.com/embed/uHjxz3qC8Q8?start=38"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <div class="research-pictures">
+              <div class="rpic1">
+                <img src="assets/img/nova_parade.jpg" alt="Nova at the Richardson Parade">
+              </div>
+              <div class="rpic2">
+                <img src="assets/img/nova_car.jpg" alt="Nova Car">
               </div>
             </div>
-          </label>
-          <label for="s2" id="slide2" onclick="">
-            <div class="project">
-              <div class="cover"></div>
-              <video class="active" id="project2-video" src="assets/img/navigator-project.mp4" height="100%" muted loop playsinline poster="assets/img/navigator-project-1.png"></video>
-              <div class="layer">
-                <h3>Navigator</h3>
-                <h4><em>Autonomous Driving</em></h4>
-                <p>The beefy brain behind our beautiful GEM&reg; e6 Electric Shuttle, built entirely from scratch by undergrads. 
-                  We've equipped it with industry-leading localization, perception, object detection, prediction, motion planning, and control systems.
-                  <br><br><em>Outside of broad development, I've contributed in large to our perception, object detection, control,
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------- PROJECTS SECTION ------------ -->
+
+  <div id="projects">
+    <div id="projects-anchor" style="position: relative; top: -30px"></div>
+    <div class="container">
+      <h1 class="sub-title">Projects</h1>
+      <input type="radio" name="slider" id="s1">
+      <input type="radio" name="slider" id="s2" checked>
+      <input type="radio" name="slider" id="s3">
+      <div class="project-list">
+        <label for="s1" id="slide1" onclick="">
+          <div class="project">
+            <div class="cover"></div>
+            <video class="active" id="project1-video" src="assets/img/website-project.mp4" height="100%" muted loop
+              playsinline poster="assets/img/website-project-1.png"></video>
+            <div class="layer">
+              <h3>This Website</h3>
+              <h4><em>Web Development</em></h4>
+              <p>It took me way too long to design that background.
+              </p>
+              <a href="https://vayman.co" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square fa-2xl"></i>
+              </a>
+              <div class="frameworks">
+                <img src="assets/img/html.png" alt="HTML">
+                <img src="assets/img/css.png" alt="CSS">
+                <img src="assets/img/nodejs.png" alt="Node JS">
+              </div>
+            </div>
+          </div>
+        </label>
+        <label for="s2" id="slide2" onclick="">
+          <div class="project">
+            <div class="cover"></div>
+            <video class="active" id="project2-video" src="assets/img/navigator-project.mp4" height="100%" muted loop
+              playsinline poster="assets/img/navigator-project-1.png"></video>
+            <div class="layer">
+              <h3>Navigator</h3>
+              <h4><em>Autonomous Driving</em></h4>
+              <p>The beefy brain behind our beautiful GEM&reg; e6 Electric Shuttle, built entirely from scratch by
+                undergrads.
+                We've equipped it with industry-leading localization, perception, object detection, prediction, motion
+                planning, and control systems.
+                <br><br><em>Outside of broad development, I've contributed in large to our perception, object detection,
+                  control,
                   and embedded systems, as well as infrastructure maintenance.</em>
-                </p>
-                <a href="https://nova-utd.github.io/navigator/" target="_blank">
-                  <i class="fa-solid fa-arrow-up-right-from-square fa-2xl"></i>
-                </a>
-                <div class="frameworks">
-                  <img src="assets/img/c++.png" alt="C++">
-                  <img src="assets/img/python.png" alt="Python">
-                  <img src="assets/img/ros.png" alt="ROS 2">
-                  <img src="assets/img/tensorflow.png" alt="TensorFlow">
-                  <img src="assets/img/PyTorch.png" alt="PyTorch">
-                  <img src="assets/img/numpy.png" alt="Numpy">
-                  <img src="assets/img/scipy.png" alt="Scipy">
-                  <img src="assets/img/docker.png" alt="Docker">
-                  <img src="assets/img/OpenCV.png" alt="OpenCV">
-                  <img src="assets/img/Cmake.png" alt="Cmake">
-                  <img src="assets/img/ubuntu.png" alt="Ubuntu Linux">
-                  <img src="assets/img/carla.png" alt="Carla simulator">
-                </div>
+              </p>
+              <a href="https://nova-utd.github.io/navigator/" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square fa-2xl"></i>
+              </a>
+              <div class="frameworks">
+                <img src="assets/img/c++.png" alt="C++">
+                <img src="assets/img/python.png" alt="Python">
+                <img src="assets/img/ros.png" alt="ROS 2">
+                <img src="assets/img/tensorflow.png" alt="TensorFlow">
+                <img src="assets/img/PyTorch.png" alt="PyTorch">
+                <img src="assets/img/numpy.png" alt="Numpy">
+                <img src="assets/img/scipy.png" alt="Scipy">
+                <img src="assets/img/docker.png" alt="Docker">
+                <img src="assets/img/OpenCV.png" alt="OpenCV">
+                <img src="assets/img/Cmake.png" alt="Cmake">
+                <img src="assets/img/ubuntu.png" alt="Ubuntu Linux">
+                <img src="assets/img/carla.png" alt="Carla simulator">
               </div>
             </div>
-          </label>
-          <label for="s3" id="slide3" onclick="">
-            <div class="project">
-              <div class="cover"></div>
-              <img src="assets/img/gray.jpg">
-              <div class="layer">
-                <h3>Coming Soon...</h3>
-                <p>super cool and awesome AI project
-                </p>
-              </div>
+          </div>
+        </label>
+        <label for="s3" id="slide3" onclick="">
+          <div class="project">
+            <div class="cover"></div>
+            <img src="assets/img/GINA Project Cover copy.jpeg">
+            <div class="layer">
+              <h3>GINA</h3>
+              <h4><em>UTD's First Liquid Propellant Rocket Engine</em></h4>
+              <br></br>
+              <a href="https://vayman.co/GINA_Whitepaper-Kevin_Ge-Daniel_Vayman.pdf" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square fa-2xl"></i>
+              </a>
             </div>
-          </label>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- --------- CONTACT SECTION ------------ -->
+  <div id="contact">
+    <div id="contact-anchor" style="position: relative; top: 40px"></div>
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> &nbsp;&nbsp;daniel@vayman.co</p>
+          <p><i class="fa-solid fa-phone" style="color: #ffffff;"></i> &nbsp;&nbsp;(314) 724-9560</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/daniel-vayman/" target="_blank"><i class="fa-brands fa-linkedin"
+                style="color: #ffffff;"></i></a>
+            <a href="https://github.com/danielv012" target="_blank"><i class="fa-brands fa-square-github"
+                style="color: #ffffff;"></i></a>
+            <a href="https://twitter.com/DanielVayman" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/daniel.vayman/" target="_blank"><i class="fa-brands fa-square-instagram"
+                style="color: #ffffff;"></i></a>
+
+            <a href=""></a>
+            <a href=""></a>
+          </div>
+          <!-- <a href="https://drive.google.com/file/d/1qO7eetrQFgMzOyPkmWpeIyaludPwADLl/view?usp=sharing" target="_blank" class="btn btn2">Download CV</a> -->
+          <a href="assets/Daniel_Vayman_Resume.pdf" download="Daniel_Vayman_Resume.pdf" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
         </div>
       </div>
     </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright &copy; Vayman - All Rights Reserved <a
+        href="https://www.freepik.com/free-vector/set-fantastic-planets-asteroids-cosmic-objects_20576153.htm#query=cartoon%20space&position=10&from_view=keyword&track=ais"
+        target="_blank" text-decoration="none">Credit for vector graphics</a></p>
+  </div>
 
-    <!-- --------- CONTACT SECTION ------------ -->
-    <div id="contact">
-      <div id="contact-anchor" style="position: relative; top: 40px"></div>
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> &nbsp;&nbsp;daniel@vayman.co</p>
-            <p><i class="fa-solid fa-phone" style="color: #ffffff;"></i> &nbsp;&nbsp;(314) 724-9560</p>
-            <div class="social-icons">
-              <a href="https://www.linkedin.com/in/daniel-vayman/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
-              <a href="https://github.com/danielv012" target="_blank"><i class="fa-brands fa-square-github" style="color: #ffffff;"></i></a>
-              <a href="https://twitter.com/DanielVayman" target="_blank"><i class="fab fa-twitter-square"></i></a>
-              <a href="https://www.instagram.com/daniel.vayman/" target="_blank"><i class="fa-brands fa-square-instagram" style="color: #ffffff;"></i></a>
-              
-              <a href=""></a>
-              <a href=""></a>
-            </div>
-            <!-- <a href="https://drive.google.com/file/d/1qO7eetrQFgMzOyPkmWpeIyaludPwADLl/view?usp=sharing" target="_blank" class="btn btn2">Download CV</a> -->
-            <a href="assets/Daniel_Vayman_Resume.pdf" download="Daniel_Vayman_Resume.pdf" class="btn btn2">Download CV</a>
-          </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" 
-              placeholder="Your Name" required>
-              <input type="email" name="Email" placeholder="Your Email" required>
-              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="copyright">
-      <p>Copyright &copy; Vayman - All Rights Reserved <a href="https://www.freepik.com/free-vector/set-fantastic-planets-asteroids-cosmic-objects_20576153.htm#query=cartoon%20space&position=10&from_view=keyword&track=ais" target="_blank" text-decoration="none">Credit for vector graphics</a></p>
-    </div>
-    
 
-    <!-- Script for switching about me tab sections -->
-  <script
-    src="https://code.jquery.com/jquery-3.7.0.js"
-    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+  <!-- Script for switching about me tab sections -->
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
     crossorigin="anonymous"></script>
   <script src="js/tab_script.js"></script>
   <script src="js/img_flip.js"></script>
@@ -309,8 +375,9 @@
   <script src="js/icon_margin_sizer.js"></script>
   <script src="js/video_player.js"></script>
   <script src="js/carousel.js"></script>
-  
-  
 
-  </body>
+
+
+</body>
+
 </html>
